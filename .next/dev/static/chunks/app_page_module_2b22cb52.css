@@ -1,0 +1,29 @@
+/* [project]/app/page.module.css [app-client] (css) */
+.page-module__E0kJGG__page {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.page-module__E0kJGG__hero {
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.page-module__E0kJGG__heroContent {
+  max-width: 800px;
+}
+
+.page-module__E0kJGG__heroContent h1 {
+  margin-bottom: var(--space-md);
+}
+
+.page-module__E0kJGG__tagline {
+  opacity: .8;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=app_page_module_2b22cb52.css.map*/

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/page.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"hero\": \"page-module__E0kJGG__hero\",\n  \"heroContent\": \"page-module__E0kJGG__heroContent\",\n  \"page\": \"page-module__E0kJGG__page\",\n  \"tagline\": \"page-module__E0kJGG__tagline\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["file:///Users/juliettemangon/Code/spinach-recordings/app/page.tsx"],"sourcesContent":["import styles from './page.module.css'\n\nexport default function HomePage() {\n  return (\n    <div className={styles.page}>\n      {/* Hero Section - placeholder for homepage content */}\n      <section className={styles.hero}>\n        <div className={styles.heroContent}>\n          <h1>Spinach Recordings®</h1>\n          <p className={styles.tagline}>\n            Artist Management & Publishing\n          </p>\n        </div>\n      </section>\n\n      {/* Add more homepage sections as needed */}\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAW,kIAAM,CAAC,IAAI;kBAEzB,cAAA,8OAAC;YAAQ,WAAW,kIAAM,CAAC,IAAI;sBAC7B,cAAA,8OAAC;gBAAI,WAAW,kIAAM,CAAC,WAAW;;kCAChC,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;wBAAE,WAAW,kIAAM,CAAC,OAAO;kCAAE;;;;;;;;;;;;;;;;;;;;;;AASxC"}}]
+}

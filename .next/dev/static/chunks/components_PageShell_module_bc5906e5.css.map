@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/juliettemangon/Code/spinach-recordings/components/PageShell.module.css"],"sourcesContent":[".page {\n  min-height: 100vh;\n  padding-top: var(--header-height);\n}\n\n.header {\n  padding: var(--space-3xl) var(--space-lg) var(--space-xl);\n  max-width: var(--max-width);\n  margin: 0 auto;\n}\n\n.header.centered {\n  text-align: center;\n}\n\n.title {\n  margin-bottom: var(--space-sm);\n}\n\n.subtitle {\n  font-size: 1.125rem;\n  opacity: 0.8;\n  max-width: 600px;\n}\n\n.header.centered .subtitle {\n  margin: 0 auto;\n}\n\n.content {\n  padding: 0 var(--space-lg) var(--space-3xl);\n  max-width: var(--max-width);\n  margin: 0 auto;\n}\n\n.content.centered {\n  text-align: center;\n}\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;AAMA;;;;AAIA;;;;AAIA;;;;;;AAMA;;;;AAIA;;;;;;AAMA"}}]
+}

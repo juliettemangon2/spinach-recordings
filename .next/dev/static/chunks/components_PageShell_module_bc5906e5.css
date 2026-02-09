@@ -1,0 +1,41 @@
+/* [project]/components/PageShell.module.css [app-client] (css) */
+.PageShell-module__9zokjG__page {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.PageShell-module__9zokjG__header {
+  padding: var(--space-3xl) var(--space-lg) var(--space-xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.PageShell-module__9zokjG__header.PageShell-module__9zokjG__centered {
+  text-align: center;
+}
+
+.PageShell-module__9zokjG__title {
+  margin-bottom: var(--space-sm);
+}
+
+.PageShell-module__9zokjG__subtitle {
+  opacity: .8;
+  max-width: 600px;
+  font-size: 1.125rem;
+}
+
+.PageShell-module__9zokjG__header.PageShell-module__9zokjG__centered .PageShell-module__9zokjG__subtitle {
+  margin: 0 auto;
+}
+
+.PageShell-module__9zokjG__content {
+  padding: 0 var(--space-lg) var(--space-3xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.PageShell-module__9zokjG__content.PageShell-module__9zokjG__centered {
+  text-align: center;
+}
+
+/*# sourceMappingURL=components_PageShell_module_bc5906e5.css.map*/
