@@ -1,0 +1,361 @@
+/* [project]/app/artists/artists.module.css [app-client] (css) */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.artists-module__G4cGUa__page {
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  min-height: 100vh;
+  padding-top: var(--header-height);
+}
+
+.artists-module__G4cGUa__container {
+  max-width: var(--max-width);
+  padding: 0 var(--space-md);
+  margin: 0 auto;
+}
+
+.artists-module__G4cGUa__hero {
+  padding: 2rem 0 var(--space-2xl);
+}
+
+.artists-module__G4cGUa__pageTitle {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+}
+
+.artists-module__G4cGUa__blurb {
+  font-family: var(--font-primary);
+  max-width: 700px;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.artists-module__G4cGUa__artistList {
+  padding-bottom: var(--space-xl);
+  color: var(--color-dark);
+  margin-top: -10rem;
+}
+
+.artists-module__G4cGUa__artistNav {
+  flex-direction: column;
+  gap: .25rem;
+  display: flex;
+}
+
+.artists-module__G4cGUa__artistNavLink {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  transition: color var(--transition-base);
+  text-align: right;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.artists-module__G4cGUa__artistNavLink:hover {
+  color: var(--color-green);
+}
+
+.artists-module__G4cGUa__pastClientsLink {
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.artists-module__G4cGUa__pastClientsLink:hover {
+  opacity: 1;
+}
+
+.artists-module__G4cGUa__divider {
+  background-color: var(--color-green);
+  border-radius: 2px;
+  width: 60%;
+  height: 8px;
+  margin: 12rem 0 0;
+}
+
+.artists-module__G4cGUa__artistSection {
+  padding: var(--space-3xl) 0;
+  scroll-margin-top: var(--header-height);
+}
+
+.artists-module__G4cGUa__artistHeader {
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  display: grid;
+}
+
+.artists-module__G4cGUa__artistInfo {
+  gap: var(--space-md);
+  flex-direction: column;
+  display: flex;
+}
+
+.artists-module__G4cGUa__artistName {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.artists-module__G4cGUa__artistTagline {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--color-green);
+  letter-spacing: .05em;
+  font-size: clamp(.85rem, 1.5vw, 1rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.artists-module__G4cGUa__artistBio {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  letter-spacing: .02em;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.artists-module__G4cGUa__artistPhotoWrapper {
+  aspect-ratio: 3 / 4;
+  width: 70%;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.artists-module__G4cGUa__artistPhotoPlaceholder {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 100%;
+}
+
+.artists-module__G4cGUa__linksRow {
+  gap: var(--space-3xl);
+  margin-top: 3rem;
+  display: flex;
+}
+
+.artists-module__G4cGUa__linkGroup {
+  gap: var(--space-sm);
+  flex-direction: column;
+  display: flex;
+}
+
+.artists-module__G4cGUa__linkGroupTitle {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--color-dark);
+  margin-bottom: .25rem;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.artists-module__G4cGUa__linkItem {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--color-dark);
+  transition: color var(--transition-fast);
+  border-bottom: 1px solid var(--color-green);
+  width: fit-content;
+  padding-bottom: 2px;
+  font-size: .875rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.artists-module__G4cGUa__linkItem:hover {
+  color: var(--color-green);
+  border-bottom-color: var(--color-orange);
+}
+
+.artists-module__G4cGUa__releasesSection {
+  margin-bottom: var(--space-3xl);
+  padding-top: 2rem;
+}
+
+.artists-module__G4cGUa__sectionTitle {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  margin-bottom: .25rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.artists-module__G4cGUa__sectionSubtitle {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  opacity: .7;
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
+}
+
+.artists-module__G4cGUa__releasesGrid {
+  gap: var(--space-lg);
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+}
+
+.artists-module__G4cGUa__releaseCard {
+  gap: var(--space-sm);
+  color: var(--color-dark);
+  transition: transform var(--transition-fast);
+  flex-direction: column;
+  text-decoration: none;
+  display: flex;
+}
+
+.artists-module__G4cGUa__releaseCard:hover {
+  transform: translateY(-4px);
+}
+
+.artists-module__G4cGUa__releaseImagePlaceholder {
+  aspect-ratio: 1;
+  background-color: #d8d8d8;
+  width: 100%;
+}
+
+.artists-module__G4cGUa__releaseTitle {
+  font-family: var(--font-primary);
+  text-align: center;
+  color: var(--color-dark);
+  font-size: .85rem;
+  line-height: 1.4;
+}
+
+.artists-module__G4cGUa__videosSection {
+  margin-bottom: var(--space-lg);
+}
+
+.artists-module__G4cGUa__videosGrid {
+  gap: var(--space-lg);
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.artists-module__G4cGUa__videoWrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+}
+
+.artists-module__G4cGUa__videoIframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.artists-module__G4cGUa__artistDivider {
+  background-color: var(--color-orange);
+  border-radius: 2px;
+  width: 60%;
+  height: 8px;
+  margin: 10rem 0 0;
+}
+
+.artists-module__G4cGUa__artistSection:nth-child(2n) .artists-module__G4cGUa__artistDivider {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.artists-module__G4cGUa__artistSection:nth-child(odd) .artists-module__G4cGUa__artistDivider {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.artists-module__G4cGUa__pastClientsSection {
+  padding: var(--space-3xl) 0 var(--space-3xl);
+  scroll-margin-top: var(--header-height);
+}
+
+.artists-module__G4cGUa__pastClientsDivider {
+  background-color: var(--color-orange);
+  width: 60%;
+  height: 4px;
+  margin: 10rem auto 0 0;
+}
+
+.artists-module__G4cGUa__pastClientsTitle {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  margin-bottom: .5rem;
+  margin-top: var(--space-3xl);
+  text-align: right;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media (max-width: 900px) {
+  .artists-module__G4cGUa__artistHeader {
+    gap: var(--space-xl);
+    grid-template-columns: 1fr;
+  }
+
+  .artists-module__G4cGUa__artistPhotoWrapper {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .artists-module__G4cGUa__releasesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .artists-module__G4cGUa__linksRow {
+    gap: var(--space-2xl);
+  }
+
+  .artists-module__G4cGUa__artistDivider, .artists-module__G4cGUa__pastClientsDivider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .artists-module__G4cGUa__artistNavLink {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .artists-module__G4cGUa__pastClientsLink {
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
+  }
+
+  .artists-module__G4cGUa__artistPhotoWrapper {
+    width: 100%;
+  }
+
+  .artists-module__G4cGUa__releasesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .artists-module__G4cGUa__videosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .artists-module__G4cGUa__linksRow {
+    gap: var(--space-lg);
+    flex-direction: column;
+  }
+
+  .artists-module__G4cGUa__artistDivider, .artists-module__G4cGUa__pastClientsDivider {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app_artists_artists_module_css_bad6b30c._.single.css.map*/

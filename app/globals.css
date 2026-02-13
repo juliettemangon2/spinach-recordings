@@ -1,6 +1,5 @@
 
-/* CSS Custom Properties
-   ========================================================================== */
+/* globals*/
 
 @import url("https://use.typekit.net/rnf3day.css");
 :root {
@@ -12,6 +11,7 @@
   --color-dark: #0B0014;
   --color-gray: #878787;
   --color-lightgreen: #1ABC75;
+  --color-cream-darker: #E2DBC4;
   
   /* Typography */
   --font-primary: 'gopher', sans-serif;
@@ -26,7 +26,7 @@
   --space-3xl: 8rem;
   
   /* Layout */
-  --max-width: 1300px;
+  --max-width: 1400px;
   --header-height: 80px;
   
   /* Transitions */
@@ -53,7 +53,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-green);
+  background-color: var(--color-dark);
   color: var(--color-cream);
   line-height: 1.6;
   min-height: 100vh;
@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.7;
+  color: var(--color-lightgreen);
 }
 
 /* Accent color links */
@@ -231,3 +231,4 @@ img {
 .italic {
   font-style: italic;
 }
+

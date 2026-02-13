@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/artists/raury":{},"/artists/ajai":{},"/artists/jayna-elise":{},"/artists/brennan-gregg":{},"/artists/savannah-summers":{}},"dynamicRoutes":{"/artists/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/artists/[slug]","routeRegex":"^\\/artists\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"8c0e2ad459fcc7ddbb635c31210b3a73","previewModeSigningKey":"9d8aaedefc03ea80dbb3c3e3744aada214871ebae18d7576104ff8181cbcda1c","previewModeEncryptionKey":"be8e68885745ed3d0be73c2a5c92296f0c321210a6b682757bf43c63dc2aa73b"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "7c18a483406ae606f58d34c254f71198",
+    "previewModeSigningKey": "b390350868d94192aba43ed29d23a5031c4b618c3158685d5e5261e609a5743c",
+    "previewModeEncryptionKey": "b5f9b2b23e0516e54889fc495a859ff3625a004ea0c99eb831d9f15e429c3791"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/artists/[slug]/page": "/artists/[slug]",
+  "/artists/page": "/artists",
+  "/founders-notes/page": "/founders-notes",
+  "/our-team/page": "/our-team",
+  "/page": "/",
+  "/programs/page": "/programs",
+  "/resources/[slug]/page": "/resources/[slug]",
+  "/resources/page": "/resources"
+}

@@ -2,6 +2,7 @@
 .page-module__E0kJGG__page {
   min-height: 100vh;
   padding-top: var(--header-height);
+  background-color: var(--color-green);
 }
 
 .page-module__E0kJGG__hero {

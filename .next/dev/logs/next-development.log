@@ -1,3 +1,63 @@
-[00:00:00.757] Server  LOG     ✓ Ready in 580ms
-[00:00:05.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.468] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:01.407] Server  LOG     ✓ Ready in 1222ms
+[00:00:02.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.458] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:32.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:15.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:17.951] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:10:07.921] Server  LOG     ✓ Compiled in 3ms
+[00:10:19.909] Server  LOG     ✓ Compiled in 4ms
+[00:10:42.970] Server  LOG     ✓ Compiled in 2ms
+[00:10:44.307] Server  LOG     ✓ Compiled in 1ms
+[00:10:46.838] Server  LOG     ✓ Compiled in 2ms
+[00:10:55.599] Server  LOG     ✓ Compiled in 1ms
+[00:11:02.909] Server  LOG     ✓ Compiled in 3ms
+[00:11:07.659] Server  LOG     ✓ Compiled in 3ms
+[00:11:09.901] Server  LOG     ✓ Compiled in 2ms
+[00:11:19.915] Server  LOG     ✓ Compiled in 3ms
+[00:11:39.904] Server  LOG     ✓ Compiled in 2ms
+[00:11:44.405] Server  LOG     ✓ Compiled in 1ms
+[00:11:50.911] Server  LOG     ✓ Compiled in 3ms
+[00:11:54.914] Server  LOG     ✓ Compiled in 2ms
+[00:11:59.911] Server  LOG     ✓ Compiled in 4ms
+[00:12:04.923] Server  LOG     ✓ Compiled in 7ms
+[00:12:21.273] Server  LOG     ✓ Compiled in 3ms
+[00:12:23.912] Server  LOG     ✓ Compiled in 2ms
+[00:12:40.919] Server  LOG     ✓ Compiled in 3ms
+[00:12:49.865] Server  LOG     ✓ Compiled in 3ms
+[00:12:54.899] Server  LOG     ✓ Compiled in 3ms
+[00:14:29.531] Server  LOG     ✓ Compiled in 8ms
+[00:14:29.851] Browser ERROR   ./app/artists/artists.module.css:327:1
+Parsing CSS source code failed
+  325 |   margin-top: var(--space-3xl);
+  326 |   trw
+> 327 | }
+      | ^
+  328 |
+  329 | .pastClientsSubtitle {
+  330 |   font-family: var(--font-primary);
+
+Unexpected end of input
+
+Import trace:
+  Server Component:
+    ./app/artists/artists.module.css
+    ./app/artists/page.tsx
+[00:14:31.853] Browser ERROR   ./app/artists/artists.module.css:327:1
+Parsing CSS source code failed
+  325 |   margin-top: var(--space-3xl);
+  326 |   t
+> 327 | }
+      | ^
+  328 |
+  329 | .pastClientsSubtitle {
+  330 |   font-family: var(--font-primary);
+
+Unexpected end of input
+
+Import trace:
+  Server Component:
+    ./app/artists/artists.module.css
+    ./app/artists/page.tsx
+[00:14:41.909] Server  LOG     ✓ Compiled in 4ms
+[00:14:48.913] Server  LOG     ✓ Compiled in 3ms
+[00:14:58.912] Server  LOG     ✓ Compiled in 2ms

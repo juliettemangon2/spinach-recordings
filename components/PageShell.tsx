@@ -5,13 +5,15 @@ interface PageShellProps {
   title?: string
   subtitle?: string
   centered?: boolean
+  fullBleed?: boolean
 }
 
 export function PageShell({ 
   children, 
   title, 
   subtitle,
-  centered = false 
+  centered = false,
+  fullBleed = false
 }: PageShellProps) {
   return (
     <div className={styles.page}>
@@ -21,7 +23,7 @@ export function PageShell({
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         </header>
       )}
-      <div className={`${styles.content} ${centered ? styles.centered : ''}`}>
+      <div className={`${fullBleed ? styles.contentFullBleed : styles.content} ${centered ? styles.centered : ''}`}>
         {children}
       </div>
     </div>

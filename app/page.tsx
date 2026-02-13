@@ -7,9 +7,7 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Spinach Recordings®</h1>
-          <p className={styles.tagline}>
-            Artist Management & Publishing
-          </p>
+          
         </div>
       </section>
 

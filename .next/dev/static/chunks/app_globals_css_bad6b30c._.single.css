@@ -7,6 +7,7 @@
   --color-dark: #0b0014;
   --color-gray: #878787;
   --color-lightgreen: #1abc75;
+  --color-cream-darker: #e2dbc4;
   --font-primary: "gopher", sans-serif;
   --space-xs: .5rem;
   --space-sm: 1rem;
@@ -15,7 +16,7 @@
   --space-xl: 3rem;
   --space-2xl: 5rem;
   --space-3xl: 8rem;
-  --max-width: 1300px;
+  --max-width: 1400px;
   --header-height: 80px;
   --transition-fast: .15s ease;
   --transition-base: .3s ease;
@@ -36,7 +37,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-green);
+  background-color: var(--color-dark);
   color: var(--color-cream);
   min-height: 100vh;
   line-height: 1.6;
@@ -84,7 +85,7 @@ a {
 }
 
 a:hover {
-  opacity: .7;
+  color: var(--color-lightgreen);
 }
 
 a.accent {
