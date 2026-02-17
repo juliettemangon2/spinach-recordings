@@ -89,7 +89,6 @@ body {
   background-color: var(--color-green);
   border-radius: 2px;
   margin-top: 12rem;
-  
 }
 
 /* Individual Artist Section
@@ -97,6 +96,7 @@ body {
 .artistSection {
   padding: var(--space-3xl) 0;
   scroll-margin-top: var(--header-height);
+  padding-top: 2rem;
 }
 
 .artistHeader {
@@ -141,17 +141,19 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* Photo
+   ========================================================================== */
 .artistPhotoWrapper {
-  width: 70%;
+  position: relative;
+  width: 80%;
   margin-left: auto;
-  aspect-ratio: 3 / 4;
+  max-width: 620px;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
 }
 
-.artistPhotoPlaceholder {
-  width: 100%;
-  height: 100%;
-  background-color: #d8d8d8;
+.artistPhoto {
+  object-fit: cover;
 }
 
 /* Links Row (Socials & Streaming)
@@ -283,8 +285,7 @@ body {
   width: 60%;
   margin: 10rem 0 0 0;
   height: 8px;
-    border-radius: 2px;
-
+  border-radius: 2px;
   background-color: var(--color-orange);
 }
 
@@ -326,6 +327,47 @@ body {
   text-align: right;
 }
 
+/* =========================
+   WideTop: image left, narrow text right
+   Apply by adding styles.artistHeaderWideTop to the header wrapper
+   and styles.artistSectionWideTop to the section wrapper.
+   ========================= */
+
+.artistSectionWideTop {
+  padding-top: 2rem; /* consistent with base */
+}
+
+.artistHeaderWideTop {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-2xl);
+  align-items: start;
+  margin-bottom: var(--space-2xl);
+}
+
+.artistHeaderWideTop .artistPhotoWrapper {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  aspect-ratio: 3 / 2;
+}
+
+
+/* Info in column 2 */
+.artistHeaderWideTop .artistInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Links: two columns (SOCIALS | STREAM) and pulled up */
+.artistHeaderWideTop .linksRow {
+  margin-top: 1.25rem; /* was 3rem */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
 
 /* Responsive
    ========================================================================== */
@@ -351,6 +393,23 @@ body {
   .artistDivider,
   .pastClientsDivider {
     width: 80%;
+  }
+
+  /* WideTop collapses to single column on mobile/tablet */
+  .artistHeaderWideTop {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .artistHeaderWideTop .artistPhotoWrapper {
+    width: 80%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .artistHeaderWideTop .linksRow {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -383,5 +442,10 @@ body {
   .artistDivider,
   .pastClientsDivider {
     width: 100%;
+  }
+
+  /* WideTop links stack on very small screens */
+  .artistHeaderWideTop .linksRow {
+    grid-template-columns: 1fr;
   }
 }

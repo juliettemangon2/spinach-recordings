@@ -1,63 +1,84 @@
-[00:00:01.407] Server  LOG     ✓ Ready in 1222ms
-[00:00:02.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:11.458] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:00:32.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:15.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:17.951] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:10:07.921] Server  LOG     ✓ Compiled in 3ms
-[00:10:19.909] Server  LOG     ✓ Compiled in 4ms
-[00:10:42.970] Server  LOG     ✓ Compiled in 2ms
-[00:10:44.307] Server  LOG     ✓ Compiled in 1ms
-[00:10:46.838] Server  LOG     ✓ Compiled in 2ms
-[00:10:55.599] Server  LOG     ✓ Compiled in 1ms
-[00:11:02.909] Server  LOG     ✓ Compiled in 3ms
-[00:11:07.659] Server  LOG     ✓ Compiled in 3ms
-[00:11:09.901] Server  LOG     ✓ Compiled in 2ms
-[00:11:19.915] Server  LOG     ✓ Compiled in 3ms
-[00:11:39.904] Server  LOG     ✓ Compiled in 2ms
-[00:11:44.405] Server  LOG     ✓ Compiled in 1ms
-[00:11:50.911] Server  LOG     ✓ Compiled in 3ms
-[00:11:54.914] Server  LOG     ✓ Compiled in 2ms
-[00:11:59.911] Server  LOG     ✓ Compiled in 4ms
-[00:12:04.923] Server  LOG     ✓ Compiled in 7ms
-[00:12:21.273] Server  LOG     ✓ Compiled in 3ms
-[00:12:23.912] Server  LOG     ✓ Compiled in 2ms
-[00:12:40.919] Server  LOG     ✓ Compiled in 3ms
-[00:12:49.865] Server  LOG     ✓ Compiled in 3ms
-[00:12:54.899] Server  LOG     ✓ Compiled in 3ms
-[00:14:29.531] Server  LOG     ✓ Compiled in 8ms
-[00:14:29.851] Browser ERROR   ./app/artists/artists.module.css:327:1
-Parsing CSS source code failed
-  325 |   margin-top: var(--space-3xl);
-  326 |   trw
-> 327 | }
-      | ^
-  328 |
-  329 | .pastClientsSubtitle {
-  330 |   font-family: var(--font-primary);
+[00:00:00.636] Server  LOG     ✓ Ready in 481ms
+[00:00:07.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:56.824] Server  LOG     ✓ Compiled in 5ms
+[00:02:58.534] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/jayna-elise.jpg" "received" null
+[00:03:00.652] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/brennan-gregg.jpg" "received" null
+[00:03:19.205] Server  LOG     ✓ Compiled in 3ms
+[00:03:23.420] Server  LOG     ✓ Compiled in 4ms
+[00:03:58.186] Server  LOG     ✓ Compiled in 2ms
+[00:04:20.909] Server  LOG     ✓ Compiled in 3ms
+[00:04:23.190] Server  LOG     ✓ Compiled in 4ms
+[00:04:31.200] Server  LOG     ✓ Compiled in 4ms
+[00:04:41.304] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/savannah-summers.jpg" "received" null
+[00:05:01.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:03.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:03.967] Browser WARN    Image with src "/artists/lauren-soyung.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:07:35.200] Server  LOG     ✓ Compiled in 4ms
+[00:07:40.199] Server  LOG     ✓ Compiled in 4ms
+[00:07:45.170] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/jayna-elise.jpg" "received" null
+[00:09:24.900] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/brennan-gregg.jpg" "received" null
+[00:10:42.284] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/brennan-gregg.jpg" "received" null
+[00:10:46.278] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/savannah-summers.jpg" "received" null
+[00:10:48.470] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:48.474] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/jayna-elise.jpg" "received" null
+[00:10:48.474] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/brennan-gregg.jpg" "received" null
+[00:10:48.475] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/artists/savannah-summers.jpg" "received" null
+[00:11:02.987] Browser WARN    Image with src "/artists/brennan-gregg.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:11:52.202] Server  LOG     ✓ Compiled in 6ms
+[00:11:55.472] Server  LOG     ✓ Compiled in 3ms
+[00:11:58.199] Server  LOG     ✓ Compiled in 5ms
+[00:12:02.200] Server  LOG     ✓ Compiled in 4ms
+[00:14:07.144] Browser ERROR   ./app/artists/page.tsx:112:22
+Parsing ecmascript source code failed
+  110 |     videos: [
+  111 |       { title: 'Jayna Elise Sings the House Down With “I Have Nothing” (American Idol 2024) ', embedUrl: 'https://www.youtube-nocookie.com/embed/c5i251aMFok' },
+> 112 |             { title: ' “All I Wanted” by Paramore (American Idol 2024)
+      |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  113 |
+  114 |  ', embedUrl: 'https://www.youtube-nocookie.com/embed/c5i251aMFok' },
+  115 |
 
-Unexpected end of input
-
-Import trace:
-  Server Component:
-    ./app/artists/artists.module.css
-    ./app/artists/page.tsx
-[00:14:31.853] Browser ERROR   ./app/artists/artists.module.css:327:1
-Parsing CSS source code failed
-  325 |   margin-top: var(--space-3xl);
-  326 |   t
-> 327 | }
-      | ^
-  328 |
-  329 | .pastClientsSubtitle {
-  330 |   font-family: var(--font-primary);
-
-Unexpected end of input
-
-Import trace:
-  Server Component:
-    ./app/artists/artists.module.css
-    ./app/artists/page.tsx
-[00:14:41.909] Server  LOG     ✓ Compiled in 4ms
-[00:14:48.913] Server  LOG     ✓ Compiled in 3ms
-[00:14:58.912] Server  LOG     ✓ Compiled in 2ms
+Unterminated string constant
+[00:16:40.044] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:16:42.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:00.324] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/whitney-andrews.jpg" "received" null
+[00:18:00.355] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/henry-love-schultz.jpg" "received" null
+[00:18:00.372] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/syreeta-butler.jpg" "received" null
+[00:18:00.375] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/steven-smith.jpg" "received" null
+[00:18:00.406] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/linda-mindaye.jpg" "received" null
+[00:18:00.408] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/rachel-lee-heinkel.jpg" "received" null
+[00:18:00.439] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/jason-lewis.jpg" "received" null
+[00:18:00.466] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/nasir-wise.jpg" "received" null
+[00:18:00.468] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/jim-fielding.jpg" "received" null
+[00:18:00.497] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/michaela-valentina.jpg" "received" null
+[00:18:00.500] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/keith-nelson-jr.jpg" "received" null
+[00:18:01.142] Browser WARN    Image with src "/team/BRAD-PORTRAIT.webp" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:18:19.666] Server  LOG     ✓ Compiled in 2ms
+[00:20:20.639] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/syreeta-Portrait.web" "received" null
+[00:21:09.233] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/STEVE" "received" null
+[00:21:57.276] Server  LOG     ✓ Compiled in 3ms
+[00:22:08.961] Server  LOG     ✓ Compiled in 3ms
+[00:22:23.007] Server  LOG     ✓ Compiled in 3ms
+[00:22:27.203] Server  LOG     ✓ Compiled in 3ms
+[00:22:51.806] Server  LOG     ✓ Compiled in 2ms
+[00:22:52.986] Server  LOG     ✓ Compiled in 1ms
+[00:23:10.201] Server  LOG     ✓ Compiled in 3ms
+[00:23:18.203] Server  LOG     ✓ Compiled in 3ms
+[00:23:28.199] Server  LOG     ✓ Compiled in 3ms
+[00:23:34.857] Server  LOG     ✓ Compiled in 3ms
+[00:23:40.198] Server  LOG     ✓ Compiled in 2ms
+[00:23:53.192] Server  LOG     ✓ Compiled in 5ms
+[00:24:06.537] Server  LOG     ✓ Compiled in 2ms
+[00:24:09.201] Server  LOG     ✓ Compiled in 2ms
+[00:24:14.836] Server  LOG     ✓ Compiled in 3ms
+[00:24:17.204] Server  LOG     ✓ Compiled in 6ms
+[00:24:43.647] Server  LOG     ✓ Compiled in 2ms
+[00:24:46.196] Server  LOG     ✓ Compiled in 3ms
+[00:24:52.195] Server  LOG     ✓ Compiled in 2ms
+[00:25:20.199] Server  LOG     ✓ Compiled in 3ms
+[00:25:30.205] Server  LOG     ✓ Compiled in 6ms
+[00:25:49.199] Server  LOG     ✓ Compiled in 3ms
+[00:25:55.201] Server  LOG     ✓ Compiled in 3ms
+[00:26:20.411] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/team/Linda-mindaye.jpg" "received" null

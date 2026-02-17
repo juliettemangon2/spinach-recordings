@@ -89,6 +89,7 @@ __turbopack_context__.v({
   "location": "our-team-module__wPPiba__location",
   "name": "our-team-module__wPPiba__name",
   "page": "our-team-module__wPPiba__page",
+  "photo": "our-team-module__wPPiba__photo",
   "photoPlaceholder": "our-team-module__wPPiba__photoPlaceholder",
   "photoWrapper": "our-team-module__wPPiba__photoWrapper",
   "roleButton": "our-team-module__wPPiba__roleButton",
@@ -105,6 +106,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PageShell$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/PageShell.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$our$2d$team$2f$our$2d$team$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/our-team/our-team.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -114,84 +117,77 @@ const teamMembers = [
         location: 'NYC',
         role: 'CEO',
         roleLink: 'https://podcasts.apple.com/us/podcast/93-understanding-music-wellness-in-your-20s-with/id1518519692?i=1000557892415',
-        photo: '/team/bradford-watson.jpg'
-    },
-    {
-        name: 'Whitney Andrews',
-        location: 'NYC',
-        role: 'HEAD OF DEVELOPMENT | SPINACH FILMS',
-        roleLink: 'https://www.imdb.com/name/nm7627558/',
-        photo: '/team/whitney-andrews.jpg'
+        photo: '/team/BRAD-PORTRAIT.webp'
     },
     {
         name: 'Henry Love-Schultz',
         location: 'Portland',
         role: 'CREATIVE DIRECTOR',
         roleLink: 'https://www.linkedin.com/in/henry-love-36177a94/',
-        photo: '/team/henry-love-schultz.jpg'
+        photo: '/team/HANK-PORTRAIT.webp'
     },
     {
         name: 'Syreeta Butler',
         location: 'Los Angeles',
         role: 'WELLNESS ADVISOR',
         roleLink: 'https://justbconsulting.net/?fbclid=PAZXh0bgNhZW0CMTEAAaa1IsNTBFjCSMvkKnLI8Hp1AV7FDBfIEN09-RDUMbB_cKIboVHe3b5NhZM_aem_o-15kPUgLpvxH8ZUJKurRA',
-        photo: '/team/syreeta-butler.jpg'
+        photo: '/team/Syreeta-Portrait.webp'
     },
     {
         name: 'Steven Smith',
         location: 'Los Angeles',
         role: 'DEVELOPMENT PRODUCER | SPINACH FILMS',
         roleLink: 'https://www.linkedin.com/in/stevensmithuga/',
-        photo: '/team/steven-smith.jpg'
+        photo: '/team/STEVE-PORTRAIT.webp'
     },
     {
         name: 'Linda Mindaye',
         location: 'Boston',
         role: 'HEAD OF COMMUNITY',
         roleLink: 'https://www.linkedin.com/in/lindamindaye/',
-        photo: '/team/linda-mindaye.jpg'
+        photo: '/team/Linda-PORTRAIT.webp'
     },
     {
         name: 'Rachel Lee Heinkel',
         location: 'NYC',
         role: 'MOVEMENT DIRECTOR',
         roleLink: 'https://www.rachelheinkel.com/about',
-        photo: '/team/rachel-lee-heinkel.jpg'
+        photo: '/team/RACHEL-PORTRAIT.webp'
     },
     {
         name: 'Jason Lewis, (aka) RAPSTRAINER',
         location: 'Los Angeles',
         role: 'PERSONAL TRAINER | LA',
         roleLink: '#',
-        photo: '/team/jason-lewis.jpg'
+        photo: '/team/JASON-PORTRAIT.webp'
     },
     {
         name: 'Nasir Wise',
         location: 'Atlanta',
         role: 'TRIPLE WASHED™ PLAYLIST CURATOR',
         roleLink: 'https://fanlink.tv/spinach',
-        photo: '/team/nasir-wise.jpg'
+        photo: '/team/NASIR-PORTRAIT.webp'
     },
     {
         name: 'Jim Fielding',
         location: 'Atlanta',
         role: 'OPERATIONS ADVISOR',
         roleLink: 'https://www.imdb.com/name/nm11959824/?ref_=mv_close',
-        photo: '/team/jim-fielding.jpg'
+        photo: '/team/JIM-PORTRAIT.webp'
     },
     {
         name: 'Michaela Valentina',
         location: 'NYC',
         role: 'WARDROBE STYLIST',
         roleLink: 'https://www.michaelavalentina.com/',
-        photo: '/team/michaela-valentina.jpg'
+        photo: '/team/Michaela-Portrait.webp'
     },
     {
         name: 'Keith Nelson Jr',
         location: 'NYC',
         role: 'WRITER',
         roleLink: '#',
-        photo: '/team/keith-nelson-jr.jpg'
+        photo: '/team/KEITH-PORTRAIT.webp'
     }
 ];
 function OurTeamPage() {
@@ -209,17 +205,17 @@ function OurTeamPage() {
                             children: "Our Team"
                         }, void 0, false, {
                             fileName: "[project]/app/our-team/page.tsx",
-                            lineNumber: 106,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/our-team/page.tsx",
-                        lineNumber: 105,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/our-team/page.tsx",
-                    lineNumber: 104,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -233,16 +229,20 @@ function OurTeamPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$our$2d$team$2f$our$2d$team$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].photoWrapper,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$our$2d$team$2f$our$2d$team$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].photoPlaceholder
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                src: member.photo,
+                                                alt: member.name,
+                                                fill: true,
+                                                sizes: "(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw",
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$our$2d$team$2f$our$2d$team$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].photo
                                             }, void 0, false, {
                                                 fileName: "[project]/app/our-team/page.tsx",
-                                                lineNumber: 118,
+                                                lineNumber: 112,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/our-team/page.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 111,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -253,7 +253,7 @@ function OurTeamPage() {
                                                     children: member.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/our-team/page.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 122,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -261,7 +261,7 @@ function OurTeamPage() {
                                                     children: member.location
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/our-team/page.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 123,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -272,45 +272,45 @@ function OurTeamPage() {
                                                     children: member.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/our-team/page.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 124,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/our-team/page.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 121,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, member.name, true, {
                                     fileName: "[project]/app/our-team/page.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 110,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/our-team/page.tsx",
-                            lineNumber: 113,
+                            lineNumber: 108,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/our-team/page.tsx",
-                        lineNumber: 112,
+                        lineNumber: 107,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/our-team/page.tsx",
-                    lineNumber: 111,
+                    lineNumber: 106,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/our-team/page.tsx",
-            lineNumber: 102,
+            lineNumber: 97,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/our-team/page.tsx",
-        lineNumber: 101,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }

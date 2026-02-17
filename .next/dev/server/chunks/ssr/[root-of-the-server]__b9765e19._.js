@@ -82,14 +82,16 @@ __turbopack_context__.v({
   "artistBio": "artists-module__G4cGUa__artistBio",
   "artistDivider": "artists-module__G4cGUa__artistDivider",
   "artistHeader": "artists-module__G4cGUa__artistHeader",
+  "artistHeaderWideTop": "artists-module__G4cGUa__artistHeaderWideTop",
   "artistInfo": "artists-module__G4cGUa__artistInfo",
   "artistList": "artists-module__G4cGUa__artistList",
   "artistName": "artists-module__G4cGUa__artistName",
   "artistNav": "artists-module__G4cGUa__artistNav",
   "artistNavLink": "artists-module__G4cGUa__artistNavLink",
-  "artistPhotoPlaceholder": "artists-module__G4cGUa__artistPhotoPlaceholder",
+  "artistPhoto": "artists-module__G4cGUa__artistPhoto",
   "artistPhotoWrapper": "artists-module__G4cGUa__artistPhotoWrapper",
   "artistSection": "artists-module__G4cGUa__artistSection",
+  "artistSectionWideTop": "artists-module__G4cGUa__artistSectionWideTop",
   "artistTagline": "artists-module__G4cGUa__artistTagline",
   "blurb": "artists-module__G4cGUa__blurb",
   "container": "artists-module__G4cGUa__container",
@@ -128,6 +130,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PageShell$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/PageShell.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/artists/artists.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -137,7 +141,7 @@ const artists = [
         name: 'Raury',
         tagline: '',
         bio: 'Raury is a free-spirited singer, rapper, guitarist, songwriter, and producer. He mixes alternative folk, rap, and electronic music while counting the diverse likes of Chance the Rapper, King Krule, and Lorde as contemporaries. The Atlanta-based artist made his commercial full-length debut in 2015 with All We Need, a ceaselessly positive album that hit the Billboard 200 with help from the lead single "Friends," featuring Tom Morello. Raury then transitioned from major-label Columbia to independence, and has since released projects such as the comparatively hushed Fervent (2019) and funkier Strawberry Moon (2022)',
-        photo: '/images/artists/raury.jpg',
+        photo: '/artists/raury.jpeg',
         socials: [
             {
                 label: 'INSTAGRAM',
@@ -196,7 +200,7 @@ const artists = [
         name: 'Lauren Soyung',
         tagline: '',
         bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
-        photo: '/images/artists/lauren-soyung.jpg',
+        photo: '/artists/lauren-soyung.jpg',
         socials: [
             {
                 label: 'INSTAGRAM',
@@ -227,7 +231,7 @@ const artists = [
         name: 'AJAI',
         tagline: '',
         bio: 'Ajai Kasim is a multidisciplinary creator whose work spans music, visual storytelling, fashion design, and millinery. Rooted in legacy, identity, and ritual, Kasim crafts immersive experiences that explore the emotional, spiritual, and cultural layers of Black expression. Whether composing a song, designing a silhouette, or shaping a crown by hand, he offers stories that resonate across medium and meaning.',
-        photo: '/images/artists/ajai.jpg',
+        photo: '/artists/ajai.JPEG',
         socials: [
             {
                 label: 'INSTAGRAM',
@@ -256,13 +260,14 @@ const artists = [
         videos: [
             {
                 title: 'AJAI -FROM SPIRIT TO MAN (Official Video)',
-                embedUrl: 'https://youtu.be/_jHoGQxqt6I'
+                embedUrl: 'https://www.youtube-nocookie.com/embed/_jHoGQxqt6I'
             },
             {
                 title: 'AJAI - ur favorite song (Official Video) ',
-                embedUrl: 'https://youtu.be/veiF8qmARh0'
+                embedUrl: 'https://www.youtube-nocookie.com/embed/veiF8qmARh0'
             }
-        ]
+        ],
+        layout: 'wideTop'
     },
     {
         slug: 'jayna-elise',
@@ -293,14 +298,23 @@ const artists = [
                 link: '#'
             }
         ],
-        videos: []
+        videos: [
+            {
+                title: 'Jayna Elise Sings the House Down With “I Have Nothing” (American Idol 2024) ',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/c5i251aMFok'
+            },
+            {
+                title: ' “All I Wanted” by Paramore (American Idol 2024) ',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/o8XqtKKT6pw'
+            }
+        ]
     },
     {
         slug: 'brennan-gregg',
         name: 'Brennan Gregg',
         tagline: '',
         bio: 'Brennan is a singer-songwriter with a penchant for lyric-forward alternative pop. He believes the mind is both a labyrinth and an endless expanse, and music helps us tread between the two. Introspective, potent, and queer — Brennan paints portraits of this complex network of machinations and desires through song. He invites any and all to weave through his ruminations — those of love, loss, addiction — like driving through an empty suburban street at 4am.',
-        photo: '/images/artists/brennan-gregg.jpg',
+        photo: '/artists/brennan-gregg.jpg',
         socials: [
             {
                 label: 'INSTAGRAM',
@@ -319,6 +333,47 @@ const artists = [
         ],
         releases: [
             {
+                title: 'Gunpowder',
+                image: '/images/releases/placeholder.jpg',
+                link: '#'
+            },
+            {
+                title: 'Arizona',
+                image: '/images/releases/placeholder.jpg',
+                link: '#'
+            }
+        ],
+        videos: [],
+        layout: 'wideTop'
+    },
+    {
+        slug: 'savannah-summers',
+        name: 'Savannah Summers',
+        tagline: '',
+        bio: 'sav! (Savannah Summers) is a California-born artist and performer whose journey began in childhood, acting in film, commercials, and television.',
+        photo: '/images/artists/savannah-summers.jpg',
+        socials: [
+            {
+                label: 'INSTAGRAM',
+                url: 'https://www.instagram.com/savannahraesummers/'
+            },
+            {
+                label: 'TIKTOK',
+                url: 'https://www.tiktok.com/@savirae'
+            }
+        ],
+        streaming: [
+            {
+                label: 'SPOTIFY',
+                url: 'https://open.spotify.com/artist/4jP3M6eTjqHE6KFDAyhBRG?si=XcTbuHkXTrSn6ffOx1Fb2A&nd=1&dlsi=adf11ef5c4444961'
+            },
+            {
+                label: 'APPLE MUSIC',
+                url: 'https://music.apple.com/us/artist/sav/1573659848'
+            }
+        ],
+        releases: [
+            {
                 title: 'Release Title',
                 image: '/images/releases/placeholder.jpg',
                 link: '#'
@@ -327,8 +382,8 @@ const artists = [
         videos: []
     },
     {
-        slug: 'savannah-summers',
-        name: 'Savannah Summers',
+        slug: 'soduh',
+        name: 'soduh',
         tagline: '',
         bio: 'sav! (Savannah Summers) is a California-born artist and performer whose journey began in childhood, acting in film, commercials, and television.',
         photo: '/images/artists/savannah-summers.jpg',
@@ -432,7 +487,7 @@ function ArtistsPage() {
                                 children: "Artists"
                             }, void 0, false, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 190,
+                                lineNumber: 223,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -440,18 +495,18 @@ function ArtistsPage() {
                                 children: "We build with artists who move culture forward — nurturing bold voices, championing originality, and creating space for the curious to thrive. Every artist we work with is a partner in something bigger."
                             }, void 0, false, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 191,
+                                lineNumber: 224,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artists/page.tsx",
-                        lineNumber: 189,
+                        lineNumber: 222,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/artists/page.tsx",
-                    lineNumber: 188,
+                    lineNumber: 221,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -468,7 +523,7 @@ function ArtistsPage() {
                                             children: artist.name
                                         }, artist.slug, false, {
                                             fileName: "[project]/app/artists/page.tsx",
-                                            lineNumber: 205,
+                                            lineNumber: 238,
                                             columnNumber: 17
                                         }, this)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -477,42 +532,48 @@ function ArtistsPage() {
                                         children: "Past Clients"
                                     }, void 0, false, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 213,
+                                        lineNumber: 246,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 203,
+                                lineNumber: 236,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/artists/page.tsx",
-                            lineNumber: 202,
+                            lineNumber: 235,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                         }, void 0, false, {
                             fileName: "[project]/app/artists/page.tsx",
-                            lineNumber: 221,
+                            lineNumber: 254,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/artists/page.tsx",
-                    lineNumber: 201,
+                    lineNumber: 234,
                     columnNumber: 9
                 }, this),
                 artists.map((artist, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         id: artist.slug,
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistSection,
+                        className: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistSection,
+                            artist.layout === 'wideTop' ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistSectionWideTop : ''
+                        ].join(' '),
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].container,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistHeader,
+                                        className: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistHeader,
+                                            artist.layout === 'wideTop' ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistHeaderWideTop : ''
+                                        ].join(' '),
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistInfo,
@@ -522,7 +583,7 @@ function ArtistsPage() {
                                                         children: artist.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 277,
                                                         columnNumber: 19
                                                     }, this),
                                                     artist.tagline && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -530,7 +591,7 @@ function ArtistsPage() {
                                                         children: artist.tagline
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 237,
+                                                        lineNumber: 279,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -538,7 +599,7 @@ function ArtistsPage() {
                                                         children: artist.bio
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 281,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -552,7 +613,7 @@ function ArtistsPage() {
                                                                         children: "SOCIALS"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/artists/page.tsx",
-                                                                        lineNumber: 243,
+                                                                        lineNumber: 285,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     artist.socials.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -563,13 +624,13 @@ function ArtistsPage() {
                                                                             children: s.label
                                                                         }, s.label, false, {
                                                                             fileName: "[project]/app/artists/page.tsx",
-                                                                            lineNumber: 245,
+                                                                            lineNumber: 287,
                                                                             columnNumber: 25
                                                                         }, this))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                lineNumber: 242,
+                                                                lineNumber: 284,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -580,7 +641,7 @@ function ArtistsPage() {
                                                                         children: "STREAM"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/artists/page.tsx",
-                                                                        lineNumber: 257,
+                                                                        lineNumber: 299,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     artist.streaming.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -591,45 +652,53 @@ function ArtistsPage() {
                                                                             children: s.label
                                                                         }, s.label, false, {
                                                                             fileName: "[project]/app/artists/page.tsx",
-                                                                            lineNumber: 259,
+                                                                            lineNumber: 301,
                                                                             columnNumber: 25
                                                                         }, this))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                lineNumber: 256,
+                                                                lineNumber: 298,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 241,
+                                                        lineNumber: 283,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 276,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhotoWrapper,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhotoPlaceholder
+                                                className: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhotoWrapper,
+                                                    artist.layout === 'wideTop' ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhotoWideTop : ''
+                                                ].join(' '),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: artist.photo,
+                                                    alt: artist.name,
+                                                    fill: true,
+                                                    sizes: artist.layout === 'wideTop' ? '(max-width: 900px) 100vw, 70vw' : '(max-width: 900px) 100vw, 40vw',
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhoto,
+                                                    priority: index === 0
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/artists/page.tsx",
-                                                    lineNumber: 273,
+                                                    lineNumber: 320,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 272,
+                                                lineNumber: 314,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 270,
                                         columnNumber: 15
                                     }, this),
                                     artist.releases.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -640,7 +709,7 @@ function ArtistsPage() {
                                                 children: "Releases."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 280,
+                                                lineNumber: 339,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -652,7 +721,7 @@ function ArtistsPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 281,
+                                                lineNumber: 340,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -667,7 +736,7 @@ function ArtistsPage() {
                                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].releaseImagePlaceholder
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                lineNumber: 293,
+                                                                lineNumber: 352,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -680,7 +749,7 @@ function ArtistsPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/artists/page.tsx",
-                                                                        lineNumber: 295,
+                                                                        lineNumber: 354,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     " by ",
@@ -688,24 +757,24 @@ function ArtistsPage() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                lineNumber: 294,
+                                                                lineNumber: 353,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, i, true, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 286,
+                                                        lineNumber: 345,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 284,
+                                                lineNumber: 343,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 279,
+                                        lineNumber: 338,
                                         columnNumber: 17
                                     }, this),
                                     artist.videos.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -716,7 +785,7 @@ function ArtistsPage() {
                                                 children: "Videos."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 306,
+                                                lineNumber: 365,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -728,7 +797,7 @@ function ArtistsPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 307,
+                                                lineNumber: 366,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -743,42 +812,42 @@ function ArtistsPage() {
                                                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].videoIframe
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/artists/page.tsx",
-                                                            lineNumber: 313,
+                                                            lineNumber: 372,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, i, false, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 312,
+                                                        lineNumber: 371,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/artists/page.tsx",
-                                                lineNumber: 310,
+                                                lineNumber: 369,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 305,
+                                        lineNumber: 364,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 231,
+                                lineNumber: 268,
                                 columnNumber: 13
                             }, this),
                             index < artists.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistDivider
                             }, void 0, false, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 329,
+                                lineNumber: 388,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, artist.slug, true, {
                         fileName: "[project]/app/artists/page.tsx",
-                        lineNumber: 226,
+                        lineNumber: 259,
                         columnNumber: 11
                     }, this)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -789,7 +858,7 @@ function ArtistsPage() {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].pastClientsDivider
                         }, void 0, false, {
                             fileName: "[project]/app/artists/page.tsx",
-                            lineNumber: 336,
+                            lineNumber: 395,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -799,12 +868,12 @@ function ArtistsPage() {
                                 children: "Past Clients"
                             }, void 0, false, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 338,
+                                lineNumber: 397,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/artists/page.tsx",
-                            lineNumber: 337,
+                            lineNumber: 396,
                             columnNumber: 11
                         }, this),
                         pastClients.map((client, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -824,7 +893,7 @@ function ArtistsPage() {
                                                             children: client.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/artists/page.tsx",
-                                                            lineNumber: 353,
+                                                            lineNumber: 412,
                                                             columnNumber: 21
                                                         }, this),
                                                         client.tagline && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -832,7 +901,7 @@ function ArtistsPage() {
                                                             children: client.tagline
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/artists/page.tsx",
-                                                            lineNumber: 355,
+                                                            lineNumber: 414,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -840,7 +909,7 @@ function ArtistsPage() {
                                                             children: client.bio
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/artists/page.tsx",
-                                                            lineNumber: 357,
+                                                            lineNumber: 416,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -854,7 +923,7 @@ function ArtistsPage() {
                                                                             children: "SOCIALS"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/artists/page.tsx",
-                                                                            lineNumber: 361,
+                                                                            lineNumber: 420,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         client.socials.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -865,13 +934,13 @@ function ArtistsPage() {
                                                                                 children: s.label
                                                                             }, s.label, false, {
                                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                                lineNumber: 363,
+                                                                                lineNumber: 422,
                                                                                 columnNumber: 27
                                                                             }, this))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/artists/page.tsx",
-                                                                    lineNumber: 360,
+                                                                    lineNumber: 419,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -882,7 +951,7 @@ function ArtistsPage() {
                                                                             children: "STREAM"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/artists/page.tsx",
-                                                                            lineNumber: 375,
+                                                                            lineNumber: 434,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         client.streaming.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -893,25 +962,25 @@ function ArtistsPage() {
                                                                                 children: s.label
                                                                             }, s.label, false, {
                                                                                 fileName: "[project]/app/artists/page.tsx",
-                                                                                lineNumber: 377,
+                                                                                lineNumber: 436,
                                                                                 columnNumber: 27
                                                                             }, this))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/artists/page.tsx",
-                                                                    lineNumber: 374,
+                                                                    lineNumber: 433,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/artists/page.tsx",
-                                                            lineNumber: 359,
+                                                            lineNumber: 418,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/artists/page.tsx",
-                                                    lineNumber: 352,
+                                                    lineNumber: 411,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,53 +989,53 @@ function ArtistsPage() {
                                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistPhotoPlaceholder
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/artists/page.tsx",
-                                                        lineNumber: 391,
+                                                        lineNumber: 450,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/artists/page.tsx",
-                                                    lineNumber: 390,
+                                                    lineNumber: 449,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/artists/page.tsx",
-                                            lineNumber: 351,
+                                            lineNumber: 410,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 349,
+                                        lineNumber: 408,
                                         columnNumber: 15
                                     }, this),
                                     index < pastClients.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$artists$2f$artists$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].artistDivider
                                     }, void 0, false, {
                                         fileName: "[project]/app/artists/page.tsx",
-                                        lineNumber: 398,
+                                        lineNumber: 457,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, client.slug, true, {
                                 fileName: "[project]/app/artists/page.tsx",
-                                lineNumber: 344,
+                                lineNumber: 403,
                                 columnNumber: 13
                             }, this))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/artists/page.tsx",
-                    lineNumber: 335,
+                    lineNumber: 394,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/artists/page.tsx",
-            lineNumber: 186,
+            lineNumber: 219,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/artists/page.tsx",
-        lineNumber: 185,
+        lineNumber: 218,
         columnNumber: 5
     }, this);
 }

@@ -12,6 +12,7 @@ const artists = [
   { name: 'Jayna Elise', slug: 'jayna-elise' },
   { name: 'Brennan Gregg', slug: 'brennan-gregg' },
   { name: 'Savannah Summers', slug: 'savannah-summers' },
+  { name: 'Soduh', slug: 'soduh' },
 ]
 
 const resources = [

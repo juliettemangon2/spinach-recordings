@@ -126,6 +126,7 @@ body {
 .artists-module__G4cGUa__artistSection {
   padding: var(--space-3xl) 0;
   scroll-margin-top: var(--header-height);
+  padding-top: 2rem;
 }
 
 .artists-module__G4cGUa__artistHeader {
@@ -171,16 +172,16 @@ body {
 }
 
 .artists-module__G4cGUa__artistPhotoWrapper {
-  aspect-ratio: 3 / 4;
-  width: 70%;
+  aspect-ratio: 4 / 5;
+  width: 80%;
+  max-width: 620px;
   margin-left: auto;
+  position: relative;
   overflow: hidden;
 }
 
-.artists-module__G4cGUa__artistPhotoPlaceholder {
-  background-color: #d8d8d8;
-  width: 100%;
-  height: 100%;
+.artists-module__G4cGUa__artistPhoto {
+  object-fit: cover;
 }
 
 .artists-module__G4cGUa__linksRow {
@@ -343,6 +344,39 @@ body {
   line-height: 1.05;
 }
 
+.artists-module__G4cGUa__artistSectionWideTop {
+  padding-top: 2rem;
+}
+
+.artists-module__G4cGUa__artistHeaderWideTop {
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  grid-template-columns: 1fr 1.2fr;
+  align-items: start;
+  display: grid;
+}
+
+.artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__artistPhotoWrapper {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__artistInfo {
+  gap: var(--space-md);
+  flex-direction: column;
+  display: flex;
+}
+
+.artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__linksRow {
+  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-top: 1.25rem;
+  display: grid;
+}
+
 @media (max-width: 900px) {
   .artists-module__G4cGUa__artistHeader {
     gap: var(--space-xl);
@@ -364,6 +398,22 @@ body {
 
   .artists-module__G4cGUa__artistDivider, .artists-module__G4cGUa__pastClientsDivider {
     width: 80%;
+  }
+
+  .artists-module__G4cGUa__artistHeaderWideTop {
+    gap: var(--space-xl);
+    grid-template-columns: 1fr;
+  }
+
+  .artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__artistPhotoWrapper {
+    width: 80%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__linksRow {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -395,6 +445,10 @@ body {
 
   .artists-module__G4cGUa__artistDivider, .artists-module__G4cGUa__pastClientsDivider {
     width: 100%;
+  }
+
+  .artists-module__G4cGUa__artistHeaderWideTop .artists-module__G4cGUa__linksRow {
+    grid-template-columns: 1fr;
   }
 }
 

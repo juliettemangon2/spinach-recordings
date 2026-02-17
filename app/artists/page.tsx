@@ -1,5 +1,7 @@
 import { PageShell } from '@/components/PageShell'
 import styles from './artists.module.css'
+import Image from 'next/image'
+
 
 interface ArtistRelease {
   title: string
@@ -18,7 +20,9 @@ interface ArtistData {
   releases: ArtistRelease[]
   videos: { title: string; embedUrl: string }[]
   isPastClient?: boolean
+  layout?: 'default' | 'wideTop'
 }
+
 
 const artists: ArtistData[] = [
   {
@@ -26,7 +30,7 @@ const artists: ArtistData[] = [
     name: 'Raury',
     tagline: '',
     bio: 'Raury is a free-spirited singer, rapper, guitarist, songwriter, and producer. He mixes alternative folk, rap, and electronic music while counting the diverse likes of Chance the Rapper, King Krule, and Lorde as contemporaries. The Atlanta-based artist made his commercial full-length debut in 2015 with All We Need, a ceaselessly positive album that hit the Billboard 200 with help from the lead single "Friends," featuring Tom Morello. Raury then transitioned from major-label Columbia to independence, and has since released projects such as the comparatively hushed Fervent (2019) and funkier Strawberry Moon (2022)',
-    photo: '/images/artists/raury.jpg',
+    photo: '/artists/raury.jpeg',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/raury/' },
     ],
@@ -45,13 +49,14 @@ const artists: ArtistData[] = [
       { title: 'Feel Good ft B.o.B. (Official Music Video)', embedUrl: 'https://www.youtube-nocookie.com/embed/SWXCABmaJ4k' },
       { title: 'Raury "Heatwave" | Zig-Zag Studio Presents: Studio Sessions', embedUrl: 'https://www.youtube-nocookie.com/embed/C1golwUV8qg' },
     ],
+
   },
   {
     slug: 'lauren-soyung',
     name: 'Lauren Soyung',
     tagline: '',
     bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
-    photo: '/images/artists/lauren-soyung.jpg',
+    photo: '/artists/lauren-soyung.jpg',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/laurensoyung/' },
     ],
@@ -69,7 +74,7 @@ const artists: ArtistData[] = [
     name: 'AJAI',
     tagline: '',
     bio: 'Ajai Kasim is a multidisciplinary creator whose work spans music, visual storytelling, fashion design, and millinery. Rooted in legacy, identity, and ritual, Kasim crafts immersive experiences that explore the emotional, spiritual, and cultural layers of Black expression. Whether composing a song, designing a silhouette, or shaping a crown by hand, he offers stories that resonate across medium and meaning.',
-    photo: '/images/artists/ajai.jpg',
+    photo: '/artists/ajai.JPEG',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/twisted.cant.fix.it/' },
       { label: 'YOUTUBE', url: 'https://www.youtube.com/@ajaikasim6168' },
@@ -81,9 +86,10 @@ const artists: ArtistData[] = [
     ],
     releases: [],
     videos: [
-      { title: 'AJAI -FROM SPIRIT TO MAN (Official Video)', embedUrl: 'https://youtu.be/_jHoGQxqt6I' },
-      { title: 'AJAI - ur favorite song (Official Video) ', embedUrl: 'https://youtu.be/veiF8qmARh0' },
+      { title: 'AJAI -FROM SPIRIT TO MAN (Official Video)', embedUrl: 'https://www.youtube-nocookie.com/embed/_jHoGQxqt6I' },
+      { title: 'AJAI - ur favorite song (Official Video) ', embedUrl: 'https://www.youtube-nocookie.com/embed/veiF8qmARh0' },
     ],
+    layout: 'wideTop',
   },
   {
     slug: 'jayna-elise',
@@ -101,14 +107,20 @@ const artists: ArtistData[] = [
     releases: [
       { title: 'Release Title', image: '/images/releases/placeholder.jpg', link: '#' },
     ],
-    videos: [],
+    videos: [
+      { title: 'Jayna Elise Sings the House Down With “I Have Nothing” (American Idol 2024) ', embedUrl: 'https://www.youtube-nocookie.com/embed/c5i251aMFok' },
+      { title: ' “All I Wanted” by Paramore (American Idol 2024) ', embedUrl: 'https://www.youtube-nocookie.com/embed/o8XqtKKT6pw' },
+
+
+
+    ],
   },
   {
     slug: 'brennan-gregg',
     name: 'Brennan Gregg',
     tagline: '',
     bio: 'Brennan is a singer-songwriter with a penchant for lyric-forward alternative pop. He believes the mind is both a labyrinth and an endless expanse, and music helps us tread between the two. Introspective, potent, and queer — Brennan paints portraits of this complex network of machinations and desires through song. He invites any and all to weave through his ruminations — those of love, loss, addiction — like driving through an empty suburban street at 4am.',
-    photo: '/images/artists/brennan-gregg.jpg',
+    photo: '/artists/brennan-gregg.jpg',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/brennangregg/' },
     ],
@@ -117,13 +129,34 @@ const artists: ArtistData[] = [
       { label: 'APPLE MUSIC', url: '#' },
     ],
     releases: [
+      { title: 'Gunpowder', image: '/images/releases/placeholder.jpg', link: '#' },
+      { title: 'Arizona', image: '/images/releases/placeholder.jpg', link: '#' },
+    ],
+    videos: [],
+    layout: 'wideTop',
+  },
+  {
+    slug: 'savannah-summers',
+    name: 'Savannah Summers',
+    tagline: '',
+    bio: 'sav! (Savannah Summers) is a California-born artist and performer whose journey began in childhood, acting in film, commercials, and television.',
+    photo: '/images/artists/savannah-summers.jpg',
+    socials: [
+      { label: 'INSTAGRAM', url: 'https://www.instagram.com/savannahraesummers/' },
+      { label: 'TIKTOK', url: 'https://www.tiktok.com/@savirae' },
+    ],
+    streaming: [
+      { label: 'SPOTIFY', url: 'https://open.spotify.com/artist/4jP3M6eTjqHE6KFDAyhBRG?si=XcTbuHkXTrSn6ffOx1Fb2A&nd=1&dlsi=adf11ef5c4444961' },
+      { label: 'APPLE MUSIC', url: 'https://music.apple.com/us/artist/sav/1573659848' },
+    ],
+    releases: [
       { title: 'Release Title', image: '/images/releases/placeholder.jpg', link: '#' },
     ],
     videos: [],
   },
   {
-    slug: 'savannah-summers',
-    name: 'Savannah Summers',
+    slug: 'soduh',
+    name: 'soduh',
     tagline: '',
     bio: 'sav! (Savannah Summers) is a California-born artist and performer whose journey began in childhood, acting in film, commercials, and television.',
     photo: '/images/artists/savannah-summers.jpg',
@@ -226,11 +259,20 @@ export default function ArtistsPage() {
           <section
             key={artist.slug}
             id={artist.slug}
-            className={styles.artistSection}
+            className={[
+              styles.artistSection,
+              artist.layout === 'wideTop' ? styles.artistSectionWideTop : '',
+            ].join(' ')}
           >
+
             <div className={styles.container}>
               {/* Name & Bio + Photo */}
-              <div className={styles.artistHeader}>
+              <div
+                className={[
+                  styles.artistHeader,
+                  artist.layout === 'wideTop' ? styles.artistHeaderWideTop : ''
+                ].join(' ')}
+              >
                 <div className={styles.artistInfo}>
                   <h2 className={styles.artistName}>{artist.name}</h2>
                   {artist.tagline && (
@@ -269,9 +311,26 @@ export default function ArtistsPage() {
                     </div>
                   </div>
                 </div>
-                <div className={styles.artistPhotoWrapper}>
-                  <div className={styles.artistPhotoPlaceholder} />
+                <div
+                  className={[
+                    styles.artistPhotoWrapper,
+                    artist.layout === 'wideTop' ? styles.artistPhotoWideTop : ''
+                  ].join(' ')}
+                >
+                  <Image
+                    src={artist.photo}
+                    alt={artist.name}
+                    fill
+                    sizes={
+                      artist.layout === 'wideTop'
+                        ? '(max-width: 900px) 100vw, 70vw'
+                        : '(max-width: 900px) 100vw, 40vw'
+                    }
+                    className={styles.artistPhoto}
+                    priority={index === 0}
+                  />
                 </div>
+
               </div>
 
               {/* Releases */}
@@ -336,7 +395,7 @@ export default function ArtistsPage() {
           <div className={styles.pastClientsDivider} />
           <div className={styles.container}>
             <h2 className={styles.pastClientsTitle}>Past Clients</h2>
-            
+
           </div>
 
           {/* Past Client Artist Sections */}
