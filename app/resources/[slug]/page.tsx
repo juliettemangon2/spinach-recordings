@@ -1,45 +1,59 @@
-import { PageShell } from '@/components/PageShell'
 import { notFound } from 'next/navigation'
+import { resourcesData } from '@/data/resources'
+import { PodcastCard } from '@/components/PodCastCard'
+import { BookCard } from '@/components/BookCard'
+import styles from './page.module.css'
 
-// Resource data - this could later come from a CMS or database
-const resources: Record<string, { title: string; content: string }> = {
-  'artist-burnout': {
-    title: 'Artist Burnout',
-    content: 'Resource content coming soon.',
-  },
-  'reputation': {
-    title: 'Reputation',
-    content: 'Resource content coming soon.',
-  },
-  'public-perception-vs-meta-perception': {
-    title: 'Public Perception vs Meta Perception',
-    content: 'Resource content coming soon.',
-  },
-}
-
-// Generate static paths for all resources
-export function generateStaticParams() {
-  return Object.keys(resources).map((slug) => ({ slug }))
-}
-
-interface ResourcePageProps {
+interface Props {
   params: Promise<{ slug: string }>
 }
 
-export default async function ResourcePage({ params }: ResourcePageProps) {
-  const { slug } = await params
-  const resource = resources[slug]
+// Pre-generate all resource pages at build time
+export function generateStaticParams() {
+  return resourcesData.map((r) => ({ slug: r.slug }))
+}
 
-  if (!resource) {
-    notFound()
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params
+  const resource = resourcesData.find((r) => r.slug === slug)
+  return {
+    title: resource ? `${resource.title} — Resources` : 'Resources',
   }
+}
+
+export default async function ResourcePage({ params }: Props) {
+  const { slug } = await params
+  const resource = resourcesData.find((r) => r.slug === slug)
+
+  if (!resource) notFound()
 
   return (
-    <PageShell title={resource.title}>
-      <div>
-        <p>{resource.content}</p>
-        {/* Add more resource content sections here */}
-      </div>
-    </PageShell>
+    <main className={styles.page}>
+
+      {/* ── LISTEN section ───────────────────────────── */}
+      <section className={styles.listenSection}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionLabel}>Listen.</span>
+        </div>
+        <div className={styles.podcastGrid}>
+          {resource.podcasts.map((podcast) => (
+            <PodcastCard key={podcast.id} {...podcast} />
+          ))}
+        </div>
+      </section>
+
+      {/* ── READ section ─────────────────────────────── */}
+      <section className={styles.readSection}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionLabel}>Read.</span>
+        </div>
+        <div className={styles.bookGrid}>
+          {resource.books.map((book) => (
+            <BookCard key={book.id} {...book} />
+          ))}
+        </div>
+      </section>
+
+    </main>
   )
 }

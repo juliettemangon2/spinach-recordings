@@ -1,102 +1,152 @@
 /* ==========================================================================
-   Artists Page
+   Artists Page — Rococo Palette
    ========================================================================== */
 
-body {
-  font-family: var(--font-primary);
-  background-color: var(--color-cream);
-  color: var(--color-dark);
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
 .page {
-  background-color: var(--color-cream);
-  color: var(--color-dark);
+  background-color: var(--light-gray);
+  color: var(--charcoal);
   min-height: 100vh;
-  padding-top: var(--header-height);
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-3xl);
+}
+
+/* Intro Wrapper: girls.JPG background spanning hero + artist list
+   ========================================================================== */
+.introWrapper {
+  position: relative;
+  margin-top: calc(-1 * var(--header-height));
+  height: 100vh;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 45% 55%;
+  background-image: url('/artists-intro/girls.JPG');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+.introOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(41, 41, 41, 0.78) 0%,
+      rgba(41, 41, 41, 0.48) 45%,
+      rgba(41, 41, 41, 0.70) 100%);
+  z-index: 0;
 }
 
 /* Hero
    ========================================================================== */
 .hero {
-  padding: 2rem 0 var(--space-2xl);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: calc(var(--header-height) + var(--space-md)) var(--space-sm) var(--space-lg) var(--space-md);
 }
 
-.pageTitle {
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--color-dark);
-  margin-bottom: 1rem;
+.hero .container {
+  max-width: none;
+  padding: 0 var(--space-md);
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-aktiv);
+  font-size:2rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.7;
+  margin-bottom: 0rem;
 }
 
 .blurb {
-  font-family: var(--font-primary);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-  line-height: 1.45;
-  max-width: 700px;
+  font-family: var(--font-aktiv);
+  font-size: clamp(1.5rem, 3vh, 2.2rem);
+  line-height: 1.3;
+  max-width: 100%;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--cream);
+  letter-spacing: 0.005em;
 }
 
 /* Artist Name List
    ========================================================================== */
 .artistList {
-  margin-top: -10rem;
-  padding-bottom: var(--space-xl);
-  color: var(--color-dark);
+  position: relative;
+  z-index: 1;
+  display: block;
+  align-self: end;
+  padding-bottom: clamp(1rem, 3vh, 2.5rem);
+  padding-right: 2rem;
+}
+
+.artistList .container {
+  max-width: none;
+  padding: 0 var(--space-2xl);
 }
 
 .artistNav {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: block;
 }
 
 .artistNavLink {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: clamp(2rem, 4vw, 4rem);
-  color: var(--color-dark);
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(3rem, 7vh, 6rem);
+  color: var(--cream);
   text-decoration: none;
-  line-height: 1.15;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
   transition: color var(--transition-base);
+  display: block;
+}
+
+/* Alternating left/right alignment — editorial zigzag */
+.artistNavLink:nth-child(even) {
+  text-align: left;
+  
+}
+
+.artistNavLink:nth-child(odd) {
   text-align: right;
 }
 
 .artistNavLink:hover {
-  color: var(--color-green);
+  color: var(--army);
 }
 
 .pastClientsLink {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  margin-top: 1rem;
+  font-size: clamp(2rem, 3vh, 3rem);
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 0rem;
+  margin-top: 0.5rem;
 }
 
 .pastClientsLink:hover {
-  opacity: 1;
+  color: var(--cream);
+  opacity: 0.85;
 }
 
-.divider {
-  width: 60%;
-  margin: 10rem 0 0 0;
-  height: 8px;
-  background-color: var(--color-green);
-  border-radius: 2px;
-  margin-top: 12rem;
-}
+
 
 /* Individual Artist Section
    ========================================================================== */
 .artistSection {
   padding: var(--space-3xl) 0;
   scroll-margin-top: var(--header-height);
-  padding-top: 2rem;
+  padding-top: var(--space-2xl);
 }
 
 .artistHeader {
@@ -114,31 +164,31 @@ body {
 }
 
 .artistName {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--color-dark);
+  color: var(--charcoal);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1.05;
 }
 
 .artistTagline {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(0.85rem, 1.5vw, 1rem);
   text-transform: uppercase;
   line-height: 1.5;
-  color: var(--color-green);
-  letter-spacing: 0.05em;
+  color: var(--army);
+  letter-spacing: 0.08em;
 }
 
 .artistBio {
-  font-family: var(--font-primary);
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: var(--color-dark);
-  letter-spacing: 0.02em;
+  font-family: var(--font-aktiv);
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--blue);
+  letter-spacing: 0.01em;
 }
 
 /* Photo
@@ -171,32 +221,32 @@ body {
 }
 
 .linkGroupTitle {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-dark);
+  letter-spacing: -0.04em;
+  color: var(--charcoal);
   margin-bottom: 0.25rem;
 }
 
 .linkItem {
-  font-family: var(--font-primary);
-  font-size: 0.875rem;
+  font-family: var(--font-aktiv);
+  font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: var(--color-dark);
+  letter-spacing: -0.02em;
+  color: var(--green);
   text-decoration: none;
   transition: color var(--transition-fast);
-  border-bottom: 1px solid var(--color-green);
-  padding-bottom: 2px;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 0.1rem;
   display: inline-block;
   width: fit-content;
 }
 
 .linkItem:hover {
-  color: var(--color-green);
-  border-bottom-color: var(--color-orange);
+  color: var(--brown);
+  border-bottom-color: var(--army);
 }
 
 /* Releases
@@ -207,22 +257,22 @@ body {
 }
 
 .sectionTitle {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--color-dark);
+  color: var(--brown);
   margin-bottom: 0.25rem;
 }
 
 .sectionSubtitle {
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  color: var(--color-dark);
-  opacity: 0.7;
+  font-family: var(--font-aktiv);
+  font-size: 1.3rem;
+  color: var(--charcoal);
   margin-bottom: var(--space-lg);
 }
 
 .releasesGrid {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-lg);
@@ -233,7 +283,7 @@ body {
   flex-direction: column;
   gap: var(--space-sm);
   text-decoration: none;
-  color: var(--color-dark);
+  color: var(--cream);
   transition: transform var(--transition-fast);
 }
 
@@ -241,24 +291,38 @@ body {
   transform: translateY(-4px);
 }
 
-.releaseImagePlaceholder {
+.releaseImageWrapper {
+  position: relative;
   width: 100%;
   aspect-ratio: 1;
-  background-color: #d8d8d8;
+  overflow: hidden;
+}
+
+.releaseImage {
+  object-fit: cover;
 }
 
 .releaseTitle {
-  font-family: var(--font-primary);
-  font-size: 0.85rem;
+  font-family: var(--font-aktiv);
+  font-size: 1.2rem;
   line-height: 1.4;
   text-align: center;
-  color: var(--color-dark);
+  color: var(--green);
 }
 
 /* Videos
    ========================================================================== */
 .videosSection {
   margin-bottom: var(--space-lg);
+  color: var(--cream);
+}
+
+.videosTitle {
+  margin-bottom: 0.25rem;
+  color: var(--blue);
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .videosGrid {
@@ -279,62 +343,79 @@ body {
   border: none;
 }
 
-/* Artist Divider
+/* Press
    ========================================================================== */
-.artistDivider {
-  width: 60%;
-  margin: 10rem 0 0 0;
-  height: 8px;
-  border-radius: 2px;
-  background-color: var(--color-orange);
+.pressSection {
+  margin-bottom: var(--space-3xl);
+  padding-top: 2rem;
 }
 
-/* Alternate divider alignment for even/odd artists */
-.artistSection:nth-child(even) .artistDivider {
-  margin-left: auto;
-  margin-right: 0;
+.pressTitle {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--brown);
+  margin-bottom: 1rem;
 }
 
-.artistSection:nth-child(odd) .artistDivider {
-  margin-left: 0;
-  margin-right: auto;
+.pressList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
+
+.pressItem {
+  font-family: var(--font-aktiv);
+  font-size: 1.5rem;
+}
+
+.pressLink {
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.pressLink:hover {
+  color: var(--brown);
+}
+
+.pressSource {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
 
 /* Past Clients Section
    ========================================================================== */
 .pastClientsSection {
   padding: var(--space-3xl) 0 var(--space-3xl);
-  scroll-margin-top: var(--header-height);
+  padding-top: 0rem;
+  
 }
 
-.pastClientsDivider {
-  width: 60%;
-  margin: 10rem auto 0 0;
-  height: 4px;
-  background-color: var(--color-orange);
-}
 
 .pastClientsTitle {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--color-dark);
+  color: var(--cream);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1.05;
   margin-bottom: 0.5rem;
-  margin-top: var(--space-3xl);
+  margin-top: var(--space-sm);
   text-align: right;
 }
 
 /* =========================
-   WideTop: image left, narrow text right
-   Apply by adding styles.artistHeaderWideTop to the header wrapper
-   and styles.artistSectionWideTop to the section wrapper.
+   WideTop layout variant
    ========================= */
-
 .artistSectionWideTop {
-  padding-top: 2rem; /* consistent with base */
+  padding-top: var(--space-2xl);
 }
 
 .artistHeaderWideTop {
@@ -352,17 +433,14 @@ body {
   aspect-ratio: 3 / 2;
 }
 
-
-/* Info in column 2 */
 .artistHeaderWideTop .artistInfo {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
 }
 
-/* Links: two columns (SOCIALS | STREAM) and pulled up */
 .artistHeaderWideTop .linksRow {
-  margin-top: 1.25rem; /* was 3rem */
+  margin-top: 1.25rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-xl);
@@ -372,6 +450,20 @@ body {
 /* Responsive
    ========================================================================== */
 @media (max-width: 900px) {
+  .introWrapper {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero {
+    padding: calc(var(--header-height) + var(--space-md)) var(--space-md) var(--space-sm);
+  }
+
+  .artistList {
+    padding-bottom: var(--space-lg);
+  }
+
   .artistHeader {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -395,7 +487,6 @@ body {
     width: 80%;
   }
 
-  /* WideTop collapses to single column on mobile/tablet */
   .artistHeaderWideTop {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -415,11 +506,14 @@ body {
 
 @media (max-width: 600px) {
   .artistNavLink {
-    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    padding-left: var(--space-sm) !important;
+    padding-right: var(--space-sm) !important;
   }
 
   .pastClientsLink {
-    font-size: clamp(1.2rem, 6vw, 1.8rem);
+    font-size: clamp(1rem, 5vw, 1.4rem);
+    padding-right: var(--space-sm);
   }
 
   .artistPhotoWrapper {
@@ -444,7 +538,6 @@ body {
     width: 100%;
   }
 
-  /* WideTop links stack on very small screens */
   .artistHeaderWideTop .linksRow {
     grid-template-columns: 1fr;
   }

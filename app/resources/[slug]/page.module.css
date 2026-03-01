@@ -1,0 +1,73 @@
+.page {
+  width: 100%;
+  background-color: var(--charcoal);
+  margin-top: 4rem;
+}
+
+/* ── Section header ─────────────────────────── */
+.sectionHeader {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4rem 0 2rem;
+}
+
+.sectionLabel {
+  margin-top: 2rem;
+  display: block;
+  font-family: var(--font-aktiv);
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--army);
+  text-transform: uppercase;
+}
+
+/* ── LISTEN section ─────────────────────────── */
+.listenSection {
+  background-color: var(--charcoal);
+  padding-bottom: 4rem;
+}
+
+
+
+
+.podcastGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ── READ section ───────────────────────────── */
+.readSection {
+  background-color: var(--charcoal);
+  padding-bottom: 5rem;
+}
+
+.bookGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ── Responsive ─────────────────────────────── */
+@media (max-width: 900px) {
+  .podcastGrid,
+  .bookGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .podcastGrid,
+  .bookGrid {
+    grid-template-columns: 1fr;
+  }
+}

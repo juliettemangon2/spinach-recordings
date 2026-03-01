@@ -1,0 +1,39 @@
+.card {
+  background: var(--green);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.embed {
+  display: block;
+}
+
+.meta {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meta p {
+  margin: 0;
+  font-family: var(--font-aktiv);
+  font-size: 1.1rem;
+  color: var(--cream);
+  line-height: 1.5;
+}
+
+.meta strong {
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 0.5rem !important;
+  color: var(--beige) !important;
+  font-size: 0.875rem !important;
+}

@@ -5,16 +5,13 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: linear-gradient(to bottom,
-    rgba(255, 252, 250, 0.7) 0%,
-    rgba(255, 252, 250, 0.65) 30%,
-    rgba(255, 252, 250, 0.5) 45%,
-    rgba(255, 252, 250, 0.35) 60%,
-    rgba(255, 252, 250, 0.15) 75%,
-    rgba(255, 252, 250, 0.05) 88%,
-    transparent 100%);
+  background: transparent;
   padding-bottom: var(--space-lg);
-  opacity: 0.95;
+}
+
+/* Solid charcoal background — our-team & resources only */
+.solidBg {
+  background-color: var(--army);
 }
 
 .container {
@@ -28,10 +25,9 @@
 
 /* Left Navigation - Two Rows */
 .leftNav {
-  opacity: 1.0;
   display: none;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: var(--space-xs);
   flex: 1;
 }
@@ -44,141 +40,191 @@
 
 .leftNav a,
 .dropdownTrigger {
-  font-size: 1.1rem;
+  font-family: var(--font-aktiv);
+  font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-weight: 500;
   background: none;
   border: none;
-  color: var(--color-dark);
+  color: var(--charcoal);
   cursor: pointer;
-  font-family: var(--font-primary);  
 }
 
+/* Light text — transparent header over dark bg pages (home, about, artists) */
+.lightText .leftNav a,
+.lightText .dropdownTrigger {
+  color: var(--beige);
+}
 
+.lightText .logo {
+  border-color: var(--beige);
+}
+
+.lightText .logoText {
+  color: var(--beige);
+}
+
+.lightText .mobileMenuButton {
+  color: var(--beige);
+}
+
+.lightText .dropdownMenu {
+  background-color: var(--charcoal);
+}
+
+.lightText .dropdownMenu a {
+  background-color: var(--charcoal);
+  color: var(--beige);
+}
+
+.lightText .dropdownMenu a:hover {
+  background-color: var(--beige);
+  color: var(--charcoal);
+}
+
+/* Solid bg — charcoal header with beige text (our-team & resources) */
+.solidBg .leftNav a,
+.solidBg .dropdownTrigger {
+    color: var(--green);
+
+}
+
+.solidBg .logo {
+  border-color: var(--green);
+}
+
+.solidBg .logoText {
+  color: var(--green);
+}
+
+.solidBg .mobileMenuButton {
+  color: var(--green);
+}
+
+.solidBg .mobileNav {
+  background-color: var(--charcoal);
+  border-top-color: rgba(195, 193, 184, 0.2);
+}
+
+.solidBg .mobileNav a,
+.solidBg .mobileDropdownTrigger {
+  color: var(--beige);
+}
+
+/* Charcoal header with light-gray text — resources pages */
+.charcoalBg {
+  background-color: var(--charcoal);
+}
+
+.charcoalBg .leftNav a,
+.charcoalBg .dropdownTrigger {
+  color: var(--light-gray);
+}
+
+.charcoalBg .logo {
+  border-color: var(--light-gray);
+}
+
+.charcoalBg .logoText {
+  color: var(--light-gray);
+}
+
+.charcoalBg .mobileMenuButton {
+  color: var(--light-gray);
+}
+
+.charcoalBg .dropdownMenu {
+  background-color: var(--charcoal);
+}
+
+.charcoalBg .dropdownMenu a {
+  background-color: var(--charcoal);
+  color: var(--light-gray);
+}
+
+.charcoalBg .dropdownMenu a:hover {
+  background-color: var(--light-gray);
+  color: var(--charcoal);
+}
+
+.charcoalBg .mobileNav {
+  background-color: var(--charcoal);
+  border-top-color: rgba(195, 193, 184, 0.2);
+}
+
+.charcoalBg .mobileNav a,
+.charcoalBg .mobileDropdownTrigger {
+  color: var(--light-gray);
+}
 
 /* Center Logo */
 .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid var(--color-cream);
+  border: 1.5px solid var(--charcoal);
   padding: 0.15rem 1.2rem;
   border-radius: 50px;
 }
 
 .logoText {
-  font-size: 2.5rem;
+  font-family: var(--font-aktiv);
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
-  color: var(--color-cream);
+  color: var(--charcoal);
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-/* Right Navigation */
-.rightNav {
-  display: none;
-  align-items: center;
-  gap: var(--space-md);
-  flex: 1;
-  justify-content: flex-end;
-}
-
-/* Social Icons Row */
-.socialIcons {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.socialIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-dark);
-  font-size: 1.3rem;
-  transition: opacity var(--transition-fast);
-}
-
-.socialIcon:hover {
-  color: var(--color-green);
-}
-
-/* Language Selector */
-.languageSelector {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-family: var(--font-primary);
-  color: var(--color-dark);
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-}
-
-.globeIcon {
-  font-size: 1.1rem;
-}
-
-/* Cart */
-.cart {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  color: var(--color-dark);
-  font-family: var(--font-primary);
-  font-size: 1.1rem;
-}
-
-.cartCount {
-  font-size: 0.9rem;
+  letter-spacing: 0.04em;
 }
 
 /* Dropdown */
 .dropdown {
-    opacity: 1.0;
-
   position: relative;
 }
 
 .dropdownMenu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%);
-  padding-top: var(--space-sm);
-  opacity: 1.0;
+  z-index: 200;
+  background-color: var(--beige);
+  opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-fast), visibility var(--transition-fast);
+}
+
+.dropdownMenuRight {
+  left: auto;
+  right: 0;
+  transform: none;
 }
 
 .dropdown:hover .dropdownMenu {
   opacity: 1;
   visibility: visible;
-  
 }
 
 .dropdownMenu a {
   display: block;
   padding: var(--space-xs) var(--space-md);
   white-space: nowrap;
-  background-color: var(--color-cream);
+  background-color: var(--beige);
+  color: var(--charcoal);
   text-transform: none;
   letter-spacing: 0;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  font-family: var(--font-aktiv);
 }
+
 .dropdownMenu a:hover {
-  
-  background-color: var(--color-dark);
-  color: var(--color-cream);
-
+  background-color: var(--charcoal);
+  color: var(--beige);
 }
-
 
 .dropdownMenu a:first-child {
-  padding-top: var(--space-sm);
+  padding-top: var(--space-xs);
 }
 
 .dropdownMenu a:last-child {
@@ -187,13 +233,13 @@
 
 /* Mobile Menu Button */
 .mobileMenuButton {
-  font-family: var(--font-primary);
-  font-size: 0.875rem;
+  font-family: var(--font-aktiv);
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background: none;
   border: none;
-  color: var(--color-dark);
+  color: var(--charcoal);
   cursor: pointer;
 }
 
@@ -202,14 +248,15 @@
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
-  background-color: var(--color-cream);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--beige);
+  border-top: 1px solid var(--light-gray);
 }
 
 .mobileNav a {
   padding: var(--space-sm) 0;
-  font-size: 1.125rem;
-  color: var(--color-dark);
+  font-family: var(--font-aktiv);
+  font-size: 1rem;
+  color: var(--charcoal);
 }
 
 .mobileDropdownTrigger {
@@ -218,11 +265,11 @@
   align-items: center;
   width: 100%;
   padding: var(--space-sm) 0;
-  font-family: var(--font-primary);
-  font-size: 1.125rem;
+  font-family: var(--font-aktiv);
+  font-size: 1rem;
   background: none;
   border: none;
-  color: var(--color-dark);
+  color: var(--charcoal);
   cursor: pointer;
   text-align: left;
 }
@@ -232,26 +279,13 @@
 }
 
 .mobileSubmenu a {
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-.mobileSocials {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  padding-top: var(--space-md);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  opacity: 0.75;
 }
 
 /* Responsive */
 @media (min-width: 1100px) {
   .leftNav {
-    display: flex;
-  }
-
-  .rightNav {
     display: flex;
   }
 

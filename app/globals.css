@@ -1,21 +1,26 @@
-
 /* globals*/
 
 @import url("https://use.typekit.net/rnf3day.css");
+
+
 :root {
-  /* Colors */
-  --color-cream: #FFFCFA;
-  --color-green: #004F2D;
-  --color-green-dark: #004F2D;
-  --color-orange: #ED6B2E;
-  --color-dark: #0B0014;
-  --color-gray: #878787;
-  --color-lightgreen: #1ABC75;
-  --color-cream-darker: #E2DBC4;
+  /* victorian Palette */
+  --dark-gray: #35312E;
+  --green: #3b4e39;
+  --blue: #536674;
+  --light-gray: #c3c1b8;
+  --cream: #fef5e0;
+  --font-parabolica: "parabolica", sans-serif;
+  --font-aktiv: "aktiv-grotesk", sans-serif;
+
+  /* rococo */
+  --brown: #536674;
+  --beige: #fef5e0;
+  --army:#c3c1b8;
+  --forest: #3b4e39;
+  --charcoal: #292929;
   
-  /* Typography */
-  --font-primary: 'gopher', sans-serif;
-  
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -24,11 +29,11 @@
   --space-xl: 3rem;
   --space-2xl: 5rem;
   --space-3xl: 8rem;
-  
+
   /* Layout */
   --max-width: 1400px;
   --header-height: 80px;
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
@@ -52,16 +57,21 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
-  background-color: var(--color-dark);
-  color: var(--color-cream);
+  font-family: var(--font-aktiv);
+  color: var(--dark-gray);
   line-height: 1.6;
   min-height: 100vh;
 }
 
 /* Typography
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-aktiv);
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -99,18 +109,13 @@ p {
 /* Links
    ========================================================================== */
 a {
-  color: var(--color-cream);
+  color: var(--dark-gray);
   text-decoration: none;
-  transition: opacity var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-lightgreen);
-}
-
-/* Accent color links */
-a.accent {
-  color: var(--color-orange);
+  color: var(--blue);
 }
 
 /* Layout Utilities
@@ -133,7 +138,7 @@ a.accent {
   align-items: center;
   justify-content: center;
   padding: var(--space-sm) var(--space-lg);
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -144,25 +149,25 @@ a.accent {
 }
 
 .button-primary {
-  background-color: var(--color-cream);
-  color: var(--color-green);
+  background-color: var(--dark-gray);
+  color: var(--cream);
 }
 
 .button-primary:hover {
-  background-color: var(--color-orange);
-  color: var(--color-cream);
+  background-color: var(--blue);
+  color: var(--cream);
   opacity: 1;
 }
 
 .button-outline {
   background-color: transparent;
-  color: var(--color-cream);
-  border: 1px solid var(--color-cream);
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
 }
 
 .button-outline:hover {
-  background-color: var(--color-cream);
-  color: var(--color-green);
+  background-color: var(--dark-gray);
+  color: var(--cream);
   opacity: 1;
 }
 
@@ -170,24 +175,23 @@ a.accent {
    ========================================================================== */
 input,
 textarea {
-  font-family: var(--font-primary);
+  font-family: var(--font-aktiv);
   font-size: 1rem;
   padding: var(--space-sm) var(--space-md);
-  background-color: var(--color-cream);
-  color: var(--color-dark);
-  border: none;
-  border-radius: 50px;
+  background-color: var(--cream);
+  color: var(--dark-gray);
+  border: 1px solid var(--beige);
+  border-radius: 0;
   outline: none;
-  transition: box-shadow var(--transition-fast);
+  transition: border-color var(--transition-fast);
 }
 
 input:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--color-orange);
+  border-color: var(--dark-gray);
 }
 
 textarea {
-  border-radius: 1rem;
   resize: vertical;
 }
 
@@ -202,8 +206,8 @@ img {
 /* Selection
    ========================================================================== */
 ::selection {
-  background-color: var(--color-orange);
-  color: var(--color-cream);
+  background-color: var(--dark-gray);
+  color: var(--cream);
 }
 
 /* Utility Classes
@@ -224,11 +228,6 @@ img {
   text-align: center;
 }
 
-.text-orange {
-  color: var(--color-orange);
-}
-
 .italic {
   font-style: italic;
 }
-

@@ -1,0 +1,186 @@
+/* ==========================================================================
+   Programs Page
+   ========================================================================== */
+
+.page {
+  min-height: 100vh;
+  background-color: var(--blue);
+  color: var(--cream);
+}
+
+/* Header
+   ========================================================================== */
+.header {
+  padding: calc(var(--header-height) + var(--space-3xl)) var(--space-lg) var(--space-xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Music Industry Masterclasses Section
+   ========================================================================== */
+.masterclassSection {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(254, 245, 224, 0.15);
+  margin-bottom: var(--space-3xl);
+}
+
+.masterclassTitle {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--cream);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.masterclassGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.masterclassContent {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.masterclassBody {
+  font-family: var(--font-aktiv);
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--cream);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.masterclassList {
+  font-family: var(--font-aktiv);
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--cream);
+  line-height: 2;
+  padding-left: 1.25em;
+  margin: 0;
+  list-style: decimal;
+}
+
+.masterclassImageWrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.masterclassImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Past Events Section
+   ========================================================================== */
+.eventsSection {
+  padding: 0 var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+.sectionLabel {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.55;
+  margin-bottom: var(--space-sm);
+}
+
+.eventList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.eventItem {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-bottom: 2px solid rgba(254, 245, 224, 0.15);
+  transition: opacity var(--transition-fast);
+}
+
+.eventItem:first-child {
+  border-top: 2px solid rgba(254, 245, 224, 0.15);
+}
+
+.eventItem:hover {
+  opacity: 0.75;
+}
+
+.eventTitle {
+  font-family: var(--font-aktiv);
+  font-weight: 500;
+  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+  color: var(--cream);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.eventDate {
+  font-family: var(--font-aktiv);
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--cream);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+  .masterclassGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .masterclassImageWrap {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .eventItem {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .eventDate {
+    font-size: 0.8rem;
+  }
+}

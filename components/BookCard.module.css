@@ -1,0 +1,58 @@
+.card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: var(--green);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.coverWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.meta {
+  padding: 1.25rem 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-aktiv);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--beige);
+  line-height: 1.4;
+}
+
+
+
+.buyLink {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--font-aktiv);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--forest);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.buyLink:hover {
+  opacity: 0.65;
+}

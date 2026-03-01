@@ -1,156 +1,291 @@
 /* ==========================================================================
-   Our Team Page
+   Our Team Page — Rococo Palette
    ========================================================================== */
-.body{
-  background-color: var(--color-dark);
-  color: var(--color-dark);
-}
-.page {
-  color: var(--color-dark);
-  background-color: var(--color-dark);
-  color: var(--color-cream);
-  min-height: 100vh;
-  padding-top: var(--header-height);
-}
 
-/* Header
-   ========================================================================== */
-.headerSection {
-  padding: var(--space-3xl) 0 var(--space-2xl);
+.page {
+  width: 100%;
+  background-color: var(--light-gray);
+  color: var(--cream);
+  min-height: 100vh;
+  margin-top: calc(-1 * var(--header-height));
 }
 
 .container {
-  max-width: 1600px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 var(--space-lg);
+  padding-left: 10rem;
 }
 
-.heading {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--color-cream);
-}
-
-/* Team Grid
+/* Hero
    ========================================================================== */
-.teamSection {
+.hero {
+  padding: calc(var(--header-height) + var(--space-xl)) 0 var(--space-sm);
+}
+
+.eyebrow {
+  padding-top: 3rem;
+  display: block;
+  font-family: var(--font-aktiv);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 3rem;
+
+}
+
+/* CEO Section
+   ========================================================================== */
+.ceoSection {
+  padding-bottom: 7rem;
+
+}
+
+.ceoHeader {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.ceoInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ceoName {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+
+}
+
+.ceoRoleLink {
+  border: 2px solid var(--green);
+  padding: 0.3rem;
+  border-radius: 10px;
+  font-family: var(--font-aktiv);
+  font-size: 1.3rem;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: var(--green);
+  margin-top: 0rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.ceoRoleLink:hover {
+  background-color: var(--brown);
+  color: var(--cream);
+}
+
+.ceoBio {
+  font-family: var(--font-aktiv);
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: var(--blue);
+  letter-spacing: 0.01em;
+  max-width: 52ch;
+}
+
+.ceoPhotoWrapper {
+  position: relative;
+  width: 60%;
+  margin-left: 0;
+  max-width: 290px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.ceoPhoto {
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+
+/* Featured Three
+   ========================================================================== */
+.featuredSection {
+  margin-top: 5rem;
+  padding: 0 0 var(--space-2xl);
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm) 1rem;
+}
+
+.featuredCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.featuredPhotoWrapper {
+  position: relative;
+  width: 65%;
+  max-width: 220px;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  margin-bottom: var(--space-xs);
+}
+
+.featuredPhoto {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.featuredName {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+
+}
+
+.featuredBio {
+  font-family: var(--font-aktiv);
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: var(--blue);
+  max-width: 36ch;
+}
+
+.featuredRoleLink {
+  font-family: var(--font-aktiv);
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0em;
+  color: var(--green);
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 0rem;
+  transition: background-color var(--transition-base), color var(--transition-base);
+  border: 2px solid var(--green);
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+.featuredRoleLink:hover {
+  background-color: var(--brown);
+  color: var(--cream);
+}
+
+/* Rest of Team List — stacked, no borders
+   ========================================================================== */
+.listSection {
   padding: 0 0 var(--space-3xl);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-2xl) var(--space-lg);
-  column-gap: 5rem;
-}
-
-/* Card
-   ========================================================================== */
-.card {
+.teamList {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
-.photoWrapper {
-  position: relative;
-  width: 95%;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  margin-bottom: var(--space-md);
-}
-.photo {
-  object-fit: cover;
-}
-
-
-.photoPlaceholder {
-  width: 100%;
-  height: 100%;
-  background-color: #1a1a2e;
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(255, 255, 255, 0.06) 100%
-  );
-}
-
-/* Info */
-.info {
+.teamRow {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-xs);
+  align-items: flex-start;
+  padding: var(--space-lg) 0;
+  gap: 0.35rem;
 }
 
-.name {
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 1.15rem;
-  color: var(--color-cream);
-  line-height: 1.3;
-}
-
-.location {
-  font-family: var(--font-primary);
-  font-size: 0.875rem;
-  color: var(--color-cream);
-}
-
-.roleButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: var(--space-xs);
-  padding: 1rem 1.5rem;
-  font-family: var(--font-primary);
-  font-size: 0.75rem;
+.memberName {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  color: var(--charcoal);
+  letter-spacing: -0.03em;
+  line-height: 1;
   text-transform: uppercase;
-  line-height: 1.4;
-  color: var(--color-cream);
-  border: 2.5px solid var(--color-cream);
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  transition: all var(--transition-base);
-  font-weight: 500;
+  transition: color var(--transition-fast);
 }
 
-.roleButton:hover {
-  background-color: var(--color-cream);
-  color: var(--color-dark);
-  border-color: var(--color-cream);
+
+
+.memberRoleLink {
+  font-family: var(--font-aktiv);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  color: var(--green);
+  border: 1.5px solid var(--green);
+  padding: 0.3rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.memberRoleLink:hover {
   opacity: 1;
+  color: var(--cream);
+  background: var(--blue);
 }
 
 /* Responsive
    ========================================================================== */
 @media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xl) var(--space-md);
+  .ceoName {
+    font-size: clamp(2rem, 4.5vw, 3.8rem);
   }
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl) var(--space-md);
-  }
-
-  .headerSection {
-    padding: var(--space-2xl) 0 var(--space-lg);
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
+@media (max-width: 900px) {
+  .ceoHeader {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
   }
 
-  .photoWrapper {
-    aspect-ratio: 4 / 5;
+  .ceoPhotoWrapper {
+    width: 55%;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-left: auto;
+  }
+
+  .featuredGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl) var(--space-lg);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .featuredGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ceoPhotoWrapper {
+    width: 75%;
+    max-width: none;
+  }
+
+  .memberName {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
   }
 }
