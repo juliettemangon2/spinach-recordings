@@ -4,22 +4,29 @@
 
 
 :root {
+  --font-parabolica: "parabolica", sans-serif;
+  --font-aktiv: "aktiv-grotesk", sans-serif;
   /* victorian Palette */
   --dark-gray: #35312E;
   --green: #3b4e39;
   --blue: #536674;
-  --light-gray: #c3c1b8;
-  --cream: #fef5e0;
-  --font-parabolica: "parabolica", sans-serif;
-  --font-aktiv: "aktiv-grotesk", sans-serif;
+  --light-gray: #d5d4d0;
+  --cream: #d5d4d0;
+
 
   /* rococo */
-  --brown: #536674;
-  --beige: #fef5e0;
-  --army:#c3c1b8;
+  --army: #d5d4d0;
   --forest: #3b4e39;
   --charcoal: #292929;
-  
+
+  /* gothic 2*/
+  --gothic-blue: #587c8e;
+  --yellow: #efdd6f;
+  --brown: #7b4b11;
+  --dark-orange: #ba6122;
+  --orange: #e59135;
+
+
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -180,7 +187,7 @@ textarea {
   padding: var(--space-sm) var(--space-md);
   background-color: var(--cream);
   color: var(--dark-gray);
-  border: 1px solid var(--beige);
+  border: 1px solid var(--cream);
   border-radius: 0;
   outline: none;
   transition: border-color var(--transition-fast);

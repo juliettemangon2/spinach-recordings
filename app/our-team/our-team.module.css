@@ -86,7 +86,7 @@
 }
 
 .ceoRoleLink:hover {
-  background-color: var(--brown);
+  background-color: var(--blue);
   color: var(--cream);
 }
 
@@ -187,7 +187,7 @@
 }
 
 .featuredRoleLink:hover {
-  background-color: var(--brown);
+  background-color: var(--blue);
   color: var(--cream);
 }
 

@@ -245,7 +245,7 @@
 }
 
 .linkItem:hover {
-  color: var(--brown);
+  color: var(--blue);
   border-bottom-color: var(--army);
 }
 
@@ -379,7 +379,7 @@
 }
 
 .pressLink:hover {
-  color: var(--brown);
+  color: var(--blue);
 }
 
 .pressSource {

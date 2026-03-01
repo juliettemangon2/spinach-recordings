@@ -54,19 +54,19 @@
 /* Light text — transparent header over dark bg pages (home, about, artists) */
 .lightText .leftNav a,
 .lightText .dropdownTrigger {
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .lightText .logo {
-  border-color: var(--beige);
+  border-color: var(--cream);
 }
 
 .lightText .logoText {
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .lightText .mobileMenuButton {
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .lightText .dropdownMenu {
@@ -75,11 +75,11 @@
 
 .lightText .dropdownMenu a {
   background-color: var(--charcoal);
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .lightText .dropdownMenu a:hover {
-  background-color: var(--beige);
+  background-color: var(--cream);
   color: var(--charcoal);
 }
 
@@ -88,7 +88,7 @@
   background-color: var(--cream);
 }
 
-/* Solid bg — charcoal header with beige text (our-team & resources) */
+/* Solid bg — charcoal header with cream text (our-team & resources) */
 .solidBg .leftNav a,
 .solidBg .dropdownTrigger {
     color: var(--green);
@@ -116,7 +116,7 @@
 .solidBg .mobileDropdownTrigger,
 .solidBg .mobileDropdownToggle,
 .solidBg .mobileDropdownRow a {
-  color: var(--beige);
+  color: var(--cream);
 }
 
 /* Charcoal header with light-gray text — resources pages */
@@ -198,7 +198,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
-  background-color: var(--beige);
+  background-color: var(--cream);
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-fast), visibility var(--transition-fast);
@@ -219,7 +219,7 @@
   display: block;
   padding: var(--space-xs) var(--space-md);
   white-space: nowrap;
-  background-color: var(--beige);
+  background-color: var(--cream);
   color: var(--charcoal);
   text-transform: none;
   letter-spacing: 0;
@@ -229,7 +229,7 @@
 
 .dropdownMenu a:hover {
   background-color: var(--charcoal);
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .dropdownMenu a:first-child {
@@ -299,7 +299,7 @@
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
-  background-color: var(--beige);
+  background-color: var(--cream);
   border-top: 1px solid var(--light-gray);
   position: relative;
   z-index: 100;

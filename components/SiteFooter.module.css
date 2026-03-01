@@ -48,7 +48,7 @@
 .emailInput {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--beige);
+  border-bottom: 1px solid var(--cream);
   color: var(--cream);
   padding: 1rem 0;
   font-family: var(--font-aktiv);
@@ -58,7 +58,7 @@
 }
 
 .emailInput::placeholder {
-  color: var(--beige);
+  color: var(--cream);
 }
 
 .submitButton {
@@ -125,7 +125,7 @@
   font-family: var(--font-aktiv);
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--beige);
+  color: var(--cream);
 }
 
 /* Column 3 - Contact */
@@ -137,7 +137,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--beige);
+  color: var(--cream);
   text-decoration: underline;
   text-underline-offset: 4px;
   margin-bottom: 0.75rem;
@@ -147,7 +147,7 @@
   font-family: var(--font-aktiv);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--beige);
+  color: var(--cream);
   margin-bottom: 0.75rem;
   max-width: 280px;
 }
@@ -170,7 +170,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--beige);
+  color: var(--cream);
   transition: color var(--transition-fast);
 }
 
