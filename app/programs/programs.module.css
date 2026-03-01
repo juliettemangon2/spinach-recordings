@@ -4,8 +4,8 @@
 
 .page {
   min-height: 100vh;
-  background-color: var(--blue);
-  color: var(--cream);
+  background-color: var(--cream);
+  color: var(--charcoal);
 }
 
 /* Header
@@ -20,7 +20,7 @@
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--charcoal);
+  color: var(--teal);
   text-transform: uppercase;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -33,7 +33,7 @@
   padding: var(--space-3xl) var(--space-lg);
   max-width: var(--max-width);
   margin: 0 auto;
-  border-bottom: 2px solid rgba(254, 245, 224, 0.15);
+  border-bottom: 2px solid rgba(41, 41, 41, 0.12);
   margin-bottom: var(--space-3xl);
 }
 
@@ -41,7 +41,7 @@
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  color: var(--cream);
+  color: var(--green);
   text-decoration: underline;
   text-underline-offset: 6px;
   letter-spacing: -0.02em;
@@ -57,7 +57,7 @@
 }
 
 .masterclassContent {
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--gold);
   border-radius: 4px;
   padding: var(--space-xl);
   display: flex;
@@ -111,11 +111,9 @@
 .sectionLabel {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  font-size:1.5rem;
-  text-transform: uppercase;
-  color: var(--cream);
-  opacity: 0.55;
-  margin-bottom: var(--space-sm);
+  font-size: 2.2rem;
+  color: var(--charcoal);
+  margin-bottom: 0rem;
 }
 
 .eventList {
@@ -129,34 +127,38 @@
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-lg);
-  padding: var(--space-md) 0;
-  border-bottom: 2px solid rgba(254, 245, 224, 0.15);
+  padding: var(--space-sm) 0;
+  border-bottom: 2.5px solid rgba(41, 41, 41, 0.12);
   transition: opacity var(--transition-fast);
 }
 
 .eventItem:first-child {
-  border-top: 2px solid rgba(254, 245, 224, 0.15);
+  border-top: 2.5px solid rgba(41, 41, 41, 0.12);
 }
 
-.eventItem:hover {
-  opacity: 0.75;
-}
+
 
 .eventTitle {
   font-family: var(--font-aktiv);
   font-weight: 500;
-  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
-  color: var(--cream);
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-size: clamp(1.2rem, 3.3vw, 2.3rem);
+  letter-spacing: -0.05em;
+  line-height: 1.15;
   flex: 1;
+  /* base color — overridden by nth-child rotation below */
+  color: var(--green);
 }
+
+/* 4-color rotation across event titles */
+.eventItem:nth-child(3n+1) .eventTitle { color: var(--green); }
+.eventItem:nth-child(3n+2) .eventTitle { color: var(--teal); }
+.eventItem:nth-child(3n+0) .eventTitle { color: var(--gold); }
 
 .eventDate {
   font-family: var(--font-aktiv);
   font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: var(--cream);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  color: var(--charcoal);
   letter-spacing: 0.05em;
   white-space: nowrap;
   flex-shrink: 0;

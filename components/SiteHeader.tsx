@@ -35,14 +35,12 @@ export function SiteHeader() {
     return () => { document.body.style.overflow = '' }
   }, [mobileMenuOpen])
 
-  const isSolidBg = pathname.startsWith('/founders-notes')
   const isOurTeam = pathname === '/our-team'
   const isResourcesPage = pathname.startsWith('/resources/')
-  const useLightText = pathname === '/' || pathname === '/about' || pathname === '/artists' || pathname === '/programs'
+  const useLightText = pathname === '/' || pathname === '/about' || pathname === '/artists'
 
   const headerClass = [
     styles.header,
-    isSolidBg ? styles.solidBg : '',
     isOurTeam ? styles.creamBg : '',
     isResourcesPage ? styles.charcoalBg : '',
     useLightText ? styles.lightText : '',

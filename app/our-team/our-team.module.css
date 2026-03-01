@@ -32,7 +32,7 @@
   font-weight: 700;
   letter-spacing: 0em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--green);
   margin-bottom: 3rem;
 
 }
@@ -86,7 +86,7 @@
 }
 
 .ceoRoleLink:hover {
-  background-color: var(--blue);
+  background-color: var(--teal);
   color: var(--cream);
 }
 
@@ -94,7 +94,7 @@
   font-family: var(--font-aktiv);
   font-size: 1.25rem;
   line-height: 1.75;
-  color: var(--blue);
+  color: var(--charcoal);
   letter-spacing: 0.01em;
   max-width: 52ch;
 }
@@ -166,7 +166,7 @@
   font-size: 1rem;
   margin-top: 1rem;
   line-height: 1.7;
-  color: var(--blue);
+  color: var(--charcoal);
   max-width: 36ch;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .featuredRoleLink:hover {
-  background-color: var(--blue);
+  background-color: var(--teal);
   color: var(--cream);
 }
 
@@ -241,7 +241,7 @@
 .memberRoleLink:hover {
   opacity: 1;
   color: var(--cream);
-  background: var(--blue);
+  background: var(--teal);
 }
 
 /* Responsive

@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background-color: var(--light-gray);
+  background-color: var(--cream);
   padding-top: var(--header-height);
 }
 
@@ -16,7 +16,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--dark-gray);
+  color: var(--charcoal);
   opacity: 0.6;
   margin-bottom: var(--space-sm);
 }

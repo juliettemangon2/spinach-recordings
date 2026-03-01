@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .page {
-  background-color: var(--light-gray);
+  background-color: var(--cream);
   color: var(--charcoal);
   min-height: 100vh;
 }
@@ -121,7 +121,7 @@
 }
 
 .artistNavLink:hover {
-  color: var(--army);
+  color: var(--gold);
 }
 
 .pastClientsLink {
@@ -176,10 +176,10 @@
 .artistTagline {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
   text-transform: uppercase;
   line-height: 1.5;
-  color: var(--army);
+  color: var(--teal);
   letter-spacing: 0.08em;
 }
 
@@ -187,7 +187,7 @@
   font-family: var(--font-aktiv);
   font-size: 1.15rem;
   line-height: 1.75;
-  color: var(--blue);
+  color: var(--charcoal);
   letter-spacing: 0.01em;
 }
 
@@ -245,8 +245,8 @@
 }
 
 .linkItem:hover {
-  color: var(--blue);
-  border-bottom-color: var(--army);
+  color: var(--teal);
+  border-bottom-color: var(--sage);
 }
 
 /* Releases
@@ -373,13 +373,13 @@
 }
 
 .pressLink {
-  color: var(--blue);
+  color: var(--teal);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 .pressLink:hover {
-  color: var(--blue);
+  color: var(--green);
 }
 
 .pressSource {
