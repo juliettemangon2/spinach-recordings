@@ -148,13 +148,13 @@ export const resourcesData: ResourceData[] = [
             {
                 id: 'ab-book-2',
                 title: 'Designing Your Life',
-                coverImage: '/images/books/designing-your-life.jpg',
+                coverImage: '/books/designing-your-life.jpg',
                 buyUrl: 'https://www.amazon.com/Designing-Your-Life-Well-Lived-Joyful/dp/1101875321',
             },
             {
                 id: 'ab-book-3',
                 title: 'The Garden Within',
-                coverImage: '/images/books/the-garden-within.jpg',
+                coverImage: '/books/the-garden-within.jpg',
                 buyUrl: 'https://www.amazon.com/Garden-Within-Emotions-Powerful-Begins/dp/1400232988',
             },
         ],
@@ -192,19 +192,19 @@ export const resourcesData: ResourceData[] = [
             {
                 id: 'pp-book-1',
                 title: 'All You Need to Know About the Music Business: Eleventh Edition',
-                coverImage: 'books/industry.jpg',
+                coverImage: '/books/industry.jpg',
                 buyUrl: 'https://www.amazon.com/Need-Know-About-Music-Business/dp/1668011069',
             },
              {
                 id: 'pp-book-2',
                 title: 'How to Win Friends and Influence People',
-                coverImage: 'books/influence.jpg',
+                coverImage: '/books/influence.jpg',
                 buyUrl: 'https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034',
             },
              {
                 id: 'pp-book-3',
                 title: 'You Are Not a Gadget: A Manifesto',
-                coverImage: 'books/gadget.jpg',
+                coverImage: '/books/gadget.jpg',
                 buyUrl: 'https://www.amazon.com/You-Are-Not-Gadget-Manifesto/dp/0307389979',
             },
         ],

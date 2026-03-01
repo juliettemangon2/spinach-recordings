@@ -109,7 +109,11 @@ export default function OurTeamPage() {
           <div className={styles.container}>
             <div className={styles.ceoHeader}>
               <div className={styles.ceoInfo}>
-                <h1 className={styles.ceoName}>{ceo.name}</h1>
+                <h1 className={styles.ceoName}>
+                  <a href={ceo.roleLink} className={styles.nameLink} target="_blank" rel="noopener noreferrer">
+                    {ceo.name}
+                  </a>
+                </h1>
                 <a
                   href={ceo.roleLink}
                   className={styles.ceoRoleLink}
@@ -150,7 +154,11 @@ export default function OurTeamPage() {
                       className={styles.featuredPhoto}
                     />
                   </div>
-                  <h2 className={styles.featuredName}>{member.name}</h2>
+                  <h2 className={styles.featuredName}>
+                    <a href={member.roleLink} className={styles.nameLink} target="_blank" rel="noopener noreferrer">
+                      {member.name}
+                    </a>
+                  </h2>
                   <a
                     href={member.roleLink}
                     className={styles.featuredRoleLink}
@@ -169,12 +177,13 @@ export default function OurTeamPage() {
 
         {/* Rest of Team */}
         <section className={styles.listSection}>
-          <div className={styles.container}>
-           
+          <div className={styles.listContainer}>
             <ul className={styles.teamList}>
               {restOfTeam.map((member) => (
                 <li className={styles.teamRow} key={member.name}>
-                  <span className={styles.memberName}>{member.name}</span>
+                  <a href={member.roleLink} className={`${styles.memberName} ${styles.nameLink}`} target="_blank" rel="noopener noreferrer">
+                    {member.name}
+                  </a>
                   <a
                     href={member.roleLink}
                     className={styles.memberRoleLink}

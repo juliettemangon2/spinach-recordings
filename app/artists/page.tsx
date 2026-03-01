@@ -181,7 +181,7 @@ const pastClients: ArtistData[] = [
     slug: 'neena-roe',
     name: 'Neena Roe',
     tagline: '',
-    bio: 'neena roe.',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     photo: '/artists/neena-roe.JPG',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/neenaroe/' },
@@ -197,7 +197,7 @@ const pastClients: ArtistData[] = [
     slug: 'bisou-bisou-radio',
     name: 'Bisou Bisou Radio',
     tagline: '',
-    bio: 'Bisou Bisou radio',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     photo: '/artists/bisoubisou.jpeg',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/bisoubisouradio/' },
@@ -432,7 +432,7 @@ export default function ArtistsPage() {
         {/* Past Clients Section */}
         <section id="past-clients" className={styles.pastClientsSection}>
           <div className={styles.container}>
-            <h2 className={styles.pastClientsTitle}>Past Clients</h2>
+            <h2 className={styles.pastClientsTitle}>Past Clients.</h2>
 
           </div>
 

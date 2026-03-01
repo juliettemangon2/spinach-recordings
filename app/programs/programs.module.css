@@ -150,7 +150,7 @@
 }
 
 /* 4-color rotation across event titles */
-.eventItem:nth-child(3n+1) .eventTitle { color: var(--green); }
+.eventItem:nth-child(3n+1) .eventTitle { color: var(--sage); }
 .eventItem:nth-child(3n+2) .eventTitle { color: var(--teal); }
 .eventItem:nth-child(3n+0) .eventTitle { color: var(--gold); }
 

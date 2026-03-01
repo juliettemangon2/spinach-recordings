@@ -191,57 +191,71 @@
   color: var(--cream);
 }
 
-/* Rest of Team List — stacked, no borders
+/* Rest of Team — editorial credits on dark bg
    ========================================================================== */
 .listSection {
-  padding: 0 0 var(--space-3xl);
+  margin-top: var(--space-2xl);
 }
+
+.listContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-2xl) var(--space-3xl);
+}
+
+
 
 .teamList {
   list-style: none;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid rgba(240, 232, 216, 0.12);
 }
 
 .teamRow {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: var(--space-lg) 0;
-  gap: 0.35rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 1.35rem 0;
+  border-bottom: 3px solid var(--sage);
+  transition: border-color var(--transition-fast);
+}
+
+.teamRow:hover .memberName {
+  color: var(--gold);
+}
+
+.teamRow:hover .memberRoleLink {
+  color: var(--gold);
+}
+
+.nameLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 .memberName {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  font-size: clamp(1.5rem, 3vw, 2.3rem);
-  color: var(--charcoal);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  color: var(--teal);
+  letter-spacing: -0.02em;
   line-height: 1;
   text-transform: uppercase;
   transition: color var(--transition-fast);
 }
 
-
-
 .memberRoleLink {
   font-family: var(--font-aktiv);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  text-transform: none;
-  letter-spacing: 0.03em;
-  color: var(--green);
-  border: 1.5px solid var(--green);
-  padding: 0.3rem;
-  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--charcoal);
   text-decoration: none;
-  transition: opacity var(--transition-fast), color var(--transition-fast);
-}
-
-.memberRoleLink:hover {
-  opacity: 1;
-  color: var(--cream);
-  background: var(--teal);
+  text-align: right;
+  transition: color var(--transition-fast);
 }
 
 /* Responsive
@@ -296,7 +310,12 @@
     margin: 0 auto;
   }
 
-  .memberName {
-    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  .teamRow {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .memberRoleLink {
+    text-align: left;
   }
 }

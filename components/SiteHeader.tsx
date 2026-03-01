@@ -36,13 +36,13 @@ export function SiteHeader() {
   }, [mobileMenuOpen])
 
   const isOurTeam = pathname === '/our-team'
+  const isPrograms = pathname === '/programs'
   const isResourcesPage = pathname.startsWith('/resources/')
   const useLightText = pathname === '/' || pathname === '/about' || pathname === '/artists'
 
   const headerClass = [
     styles.header,
-    isOurTeam ? styles.creamBg : '',
-    isResourcesPage ? styles.charcoalBg : '',
+    isResourcesPage || isOurTeam || isPrograms ? styles.creamBg : '',
     useLightText ? styles.lightText : '',
   ].filter(Boolean).join(' ')
 

@@ -1,5 +1,5 @@
 .card {
-  background: var(--green);
+  background: var(--sage);
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;

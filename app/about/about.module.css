@@ -70,7 +70,7 @@
 
 .partnersHeading {
   font-family: var(--font-aktiv);
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(2rem, 3.5vw, 3rem);
   color: var(--charcoal);
   text-align: center;
@@ -94,9 +94,10 @@
   height: 52px;
   border-radius: 50%;
   border: none;
-  background-color: var(--green);
-  color: #fff;
+  background-color: var(--teal);
+  color: var(--cream);
   font-size: 1.25rem;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
