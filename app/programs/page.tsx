@@ -8,7 +8,7 @@ const events = [
   { title: 'SOUND MIND FESTIVAL  DAY 2 ', date: '2025-5-17' },
   { title: 'Seed & Spark Creativity Sustainability Summit ', date: '2025-10-17' },
   { title: 'Ajai Kasim Album Listening Party ', date: '2025-10-30' },
-  { title: '5 Year Anniv Show (Feat. Ruary & Friends) ', date: '2025-12-10' },
+  { title: '5 Year Anniv Show (Feat. Raury & Friends) ', date: '2025-12-10' },
 ]
 
 export default function ProgramsPage() {

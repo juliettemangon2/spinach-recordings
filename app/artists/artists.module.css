@@ -69,8 +69,8 @@
 
 .blurb {
   font-family: var(--font-aktiv);
-  font-size: clamp(1.5rem, 3vh, 2.2rem);
-  line-height: 1.3;
+  font-size: clamp(1.6rem, 3.1vh, 2.3rem);
+  line-height: 1.4;
   max-width: 100%;
   font-weight: 500;
   font-style: italic;
@@ -91,7 +91,7 @@
 
 .artistList .container {
   max-width: none;
-  padding: 0 var(--space-2xl);
+  padding: 0 6rem;
 }
 
 .artistNav {
@@ -260,7 +260,7 @@
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--brown);
+  color: var(--charcoal);
   margin-bottom: 0.25rem;
 }
 
@@ -319,7 +319,7 @@
 
 .videosTitle {
   margin-bottom: 0.25rem;
-  color: var(--blue);
+  color: var(--charcoal);
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -354,7 +354,7 @@
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--brown);
+  color: var(--charcoal);
   margin-bottom: 1rem;
 }
 
@@ -369,11 +369,11 @@
 
 .pressItem {
   font-family: var(--font-aktiv);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .pressLink {
-  color: var(--charcoal);
+  color: var(--blue);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
@@ -450,6 +450,10 @@
 /* Responsive
    ========================================================================== */
 @media (max-width: 900px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
   .introWrapper {
     grid-template-columns: 1fr;
     height: auto;
@@ -462,6 +466,11 @@
 
   .artistList {
     padding-bottom: var(--space-lg);
+    padding-right: 0;
+  }
+
+  .artistList .container {
+    padding: 0 var(--space-lg);
   }
 
   .artistHeader {
@@ -472,6 +481,8 @@
   .artistPhotoWrapper {
     width: 80%;
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .releasesGrid {
@@ -480,6 +491,10 @@
 
   .linksRow {
     gap: var(--space-2xl);
+  }
+
+  .pressItem {
+    font-size: 1.2rem;
   }
 
   .artistDivider,
@@ -505,6 +520,14 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .artistList .container {
+    padding: 0 var(--space-md);
+  }
+
   .artistNavLink {
     font-size: clamp(2rem, 10vw, 3.2rem);
     padding-left: var(--space-sm) !important;
@@ -518,6 +541,7 @@
 
   .artistPhotoWrapper {
     width: 100%;
+    max-width: none;
   }
 
   .releasesGrid {
@@ -533,9 +557,18 @@
     gap: var(--space-lg);
   }
 
+  .pressItem {
+    font-size: 1rem;
+  }
+
   .artistDivider,
   .pastClientsDivider {
     width: 100%;
+  }
+
+  .artistHeaderWideTop .artistPhotoWrapper {
+    width: 100%;
+    max-width: none;
   }
 
   .artistHeaderWideTop .linksRow {

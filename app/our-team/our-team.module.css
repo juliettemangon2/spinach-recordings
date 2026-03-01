@@ -4,7 +4,7 @@
 
 .page {
   width: 100%;
-  background-color: var(--light-gray);
+  background-color: var(--cream);
   color: var(--cream);
   min-height: 100vh;
   margin-top: calc(-1 * var(--header-height));
@@ -32,7 +32,7 @@
   font-weight: 700;
   letter-spacing: 0em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--blue);
   margin-bottom: 3rem;
 
 }
@@ -253,6 +253,10 @@
 }
 
 @media (max-width: 900px) {
+  .container {
+    padding-left: var(--space-lg);
+  }
+
   .ceoHeader {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -262,7 +266,7 @@
     width: 55%;
     max-width: 280px;
     margin: 0 auto;
-    margin-left: auto;
+    order: -1;
   }
 
   .featuredGrid {
@@ -280,9 +284,16 @@
     grid-template-columns: 1fr;
   }
 
+  .featuredPhotoWrapper {
+    width: 80%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
   .ceoPhotoWrapper {
     width: 75%;
     max-width: none;
+    margin: 0 auto;
   }
 
   .memberName {

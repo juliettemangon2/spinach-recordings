@@ -64,7 +64,7 @@
 /* Partners
    ========================================================================== */
 .partners {
-  background-color: var(--light-gray);
+  background-color: var(--cream);
   padding: var(--space-xl) 0 var(--space-xl);
 }
 
@@ -74,45 +74,169 @@
   font-size: clamp(2rem, 3.5vw, 3rem);
   color: var(--dark-gray);
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: var(--space-lg);
 }
 
-/* Partner Name List */
-.partnerList {
+/* Carousel */
+.carouselWrapper {
   display: flex;
-  flex-direction: column;
-  gap: 0;
-  max-width: 900px;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 var(--space-lg);
+  max-width: 1500px;
   margin: 0 auto;
 }
 
-.partnerName {
+.arrowBtn {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--green);
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.arrowBtn:hover:not(:disabled) {
+  transform: scale(1.08);
+}
+
+.arrowBtn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+  max-width: 280px;
+}
+
+.logoPlaceholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #e8e8e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoInitials {
   font-family: var(--font-aktiv);
   font-weight: 700;
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-  color: var(--green);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  display: block;
+  font-size: 1.1rem;
+  color: #888;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 
-.partnerName:nth-child(odd) {
-  text-align: left;
+.partnerCardName {
+  font-family: var(--font-aktiv);
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--dark-gray);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.partnerName:nth-child(even) {
-  text-align: right;
+/* Dots */
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.dotActive {
+  background-color: var(--green);
 }
 
 /* Responsive
    ========================================================================== */
-@media (max-width: 600px) {
-  .heroHeading {
-    font-size: clamp(1.5rem, 6vw, 2.25rem);
+@media (max-width: 768px) {
+  .heroContent {
+    padding: var(--space-md) var(--space-sm);
   }
 
-  .partnerName {
-    font-size: clamp(0.95rem, 4.5vw, 1.3rem);
+  .carouselWrapper {
+    gap: 0.75rem;
+    padding: 0 var(--space-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .heroHeading {
+    margin-top: 3rem;
+    font-size: clamp(1.9rem, 6vw, 3rem);
+    line-height: 1.2;
+  }
+
+  .hero {
+    padding: var(--space-md) var(--space-sm);
+    min-height: 100svh;
+  }
+
+  .heroContent {
+    padding: var(--space-sm) var(--space-xs);
+  }
+
+  .carouselWrapper {
+    gap: 0.5rem;
+    padding: 0 var(--space-xs);
+  }
+
+  .carouselTrack {
+    gap: 0.75rem;
+  }
+
+  .partnerCard {
+    max-width: none;
+  }
+
+  .logoPlaceholder {
+    width: 120px;
+    height: 120px;
+  }
+
+  .arrowBtn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .partnersHeading {
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
   }
 }

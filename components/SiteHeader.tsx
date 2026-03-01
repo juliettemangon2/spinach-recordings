@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './SiteHeader.module.css'
 
 const artists = [
@@ -12,7 +12,6 @@ const artists = [
   { name: 'Jayna Elise', slug: 'jayna-elise' },
   { name: 'Brennan Gregg', slug: 'brennan-gregg' },
   { name: 'Savannah Summers', slug: 'savannah-summers' },
-  { name: 'Soduh', slug: 'soduh' },
 ]
 
 const resources = [
@@ -27,13 +26,24 @@ export function SiteHeader() {
   const [artistsOpen, setArtistsOpen] = useState(false)
   const [resourcesOpen, setResourcesOpen] = useState(false)
 
-  const isSolidBg = pathname === '/our-team' || pathname.startsWith('/founders-notes')
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [mobileMenuOpen])
+
+  const isSolidBg = pathname.startsWith('/founders-notes')
+  const isOurTeam = pathname === '/our-team'
   const isResourcesPage = pathname.startsWith('/resources/')
   const useLightText = pathname === '/' || pathname === '/about' || pathname === '/artists' || pathname === '/programs'
 
   const headerClass = [
     styles.header,
     isSolidBg ? styles.solidBg : '',
+    isOurTeam ? styles.creamBg : '',
     isResourcesPage ? styles.charcoalBg : '',
     useLightText ? styles.lightText : '',
   ].filter(Boolean).join(' ')
@@ -117,26 +127,36 @@ export function SiteHeader() {
 
         {/* Mobile Menu Button */}
         <button
-          className={styles.mobileMenuButton}
+          className={`${styles.mobileMenuButton} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
         >
-          {mobileMenuOpen ? 'Close' : 'Menu'}
+          <span />
+          <span />
+          <span />
         </button>
       </div>
+
+      {/* Backdrop */}
+      {mobileMenuOpen && (
+        <div className={styles.backdrop} onClick={() => setMobileMenuOpen(false)} />
+      )}
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <nav className={styles.mobileNav}>
           <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={pathname === '/about' ? styles.active : ''}>About</Link>
 
-          <button className={`${styles.mobileDropdownTrigger} ${pathname.startsWith('/artists') ? styles.active : ''}`} onClick={() => setArtistsOpen(!artistsOpen)}>
-            Artists {artistsOpen ? '−' : '+'}
-          </button>
+          <div className={styles.mobileDropdownRow}>
+            <Link href="/artists" onClick={() => setMobileMenuOpen(false)} className={pathname === '/artists' ? styles.active : ''}>Artists</Link>
+            <button className={styles.mobileDropdownToggle} onClick={() => setArtistsOpen(!artistsOpen)} aria-label={artistsOpen ? 'Collapse artists' : 'Expand artists'}>
+              {artistsOpen ? '−' : '+'}
+            </button>
+          </div>
           {artistsOpen && (
             <div className={styles.mobileSubmenu}>
               {artists.map((artist) => (
-                <Link key={artist.slug} href={`/artists/${artist.slug}`} onClick={() => setMobileMenuOpen(false)}>{artist.name}</Link>
+                <Link key={artist.slug} href={`/artists/#${artist.slug}`} onClick={() => setMobileMenuOpen(false)}>{artist.name}</Link>
               ))}
             </div>
           )}

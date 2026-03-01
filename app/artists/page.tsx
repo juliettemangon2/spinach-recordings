@@ -58,19 +58,7 @@ const artists: ArtistData[] = [
     ],
 
   },
-  {
-    slug: 'lauren-soyung',
-    name: 'Lauren Soyung',
-    tagline: '',
-    bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
-    photo: '/artists/lauren-soyung.jpg',
-    socials: [
-      { label: 'INSTAGRAM', url: 'https://www.instagram.com/laurensoyung/' },
-    ],
-    streaming: [],
-    releases: [],
-    videos: [],
-  },
+  
   {
     slug: 'savannah-summers',
     name: 'sav!',
@@ -92,6 +80,19 @@ const artists: ArtistData[] = [
 
 
     ],
+    videos: [],
+  },
+  {
+    slug: 'lauren-soyung',
+    name: 'Lauren Soyung',
+    tagline: '',
+    bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
+    photo: '/artists/lauren-soyung.jpg',
+    socials: [
+      { label: 'INSTAGRAM', url: 'https://www.instagram.com/laurensoyung/' },
+    ],
+    streaming: [],
+    releases: [],
     videos: [],
   },
 
