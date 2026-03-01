@@ -1,3 +1,0 @@
-module.exports=[70864,a=>{a.n(a.i(33290))},43619,a=>{a.n(a.i(79962))},13718,a=>{a.n(a.i(85523))},18198,a=>{a.n(a.i(45518))},62212,a=>{a.n(a.i(66114))},32401,a=>{a.v({hero:"page-module__E0kJGG__hero",heroContent:"page-module__E0kJGG__heroContent",page:"page-module__E0kJGG__page",tagline:"page-module__E0kJGG__tagline"})},50708,a=>{"use strict";var b=a.i(7997),c=a.i(32401);function d(){return(0,b.jsx)("div",{className:c.default.page,children:(0,b.jsx)("section",{className:c.default.hero,children:(0,b.jsx)("div",{className:c.default.heroContent,children:(0,b.jsx)("h1",{children:"Spinach Recordings®"})})})})}a.s(["default",()=>d])}];
-
-//# sourceMappingURL=_0884d63f._.js.map
