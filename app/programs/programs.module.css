@@ -37,16 +37,19 @@
   margin-bottom: var(--space-3xl);
 }
 
+.masterclassTitleWrap {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
 .masterclassTitle {
   font-family: var(--font-aktiv);
   font-weight: 700;
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
-  color: var(--green);
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  color: var(--charcoal);
+  border-bottom: 4px solid var(--gold);
   letter-spacing: -0.02em;
-  margin-bottom: var(--space-xl);
-  text-align: center;
+  display: inline-block;
 }
 
 .masterclassGrid {

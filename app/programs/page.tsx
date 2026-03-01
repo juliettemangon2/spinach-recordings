@@ -20,7 +20,9 @@ export default function ProgramsPage() {
 
       {/* Music Industry Masterclasses Section */}
       <section className={styles.masterclassSection}>
-        <h2 className={styles.masterclassTitle}>Music Industry Masterclasses</h2>
+        <div className={styles.masterclassTitleWrap}>
+          <h2 className={styles.masterclassTitle}>Music Industry Masterclasses</h2>
+        </div>
         <div className={styles.masterclassGrid}>
           <div className={styles.masterclassContent}>
             <p className={styles.masterclassBody}>
