@@ -143,20 +143,38 @@
 /* Individual Artist Section
    ========================================================================== */
 .artistSection {
-  padding: var(--space-3xl) 0;
+  padding-top: 10rem;
+  padding-bottom: var(--space-md);
   scroll-margin-top: var(--header-height);
-  padding-top: var(--space-2xl);
+  border-top: 6px solid rgba(122, 157, 119, 0.4); /* --sage */
+}
+
+.artistSection:first-of-type {
+  border-top: none;
 }
 
 .artistHeader {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-2xl);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "nameblock photo"
+    "info      photo";
+  column-gap: var(--space-2xl);
+  row-gap: var(--space-md);
   align-items: start;
   margin-bottom: var(--space-2xl);
 }
 
+.artistNameBlock {
+  grid-area: nameblock;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .artistInfo {
+  grid-area: info;
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
@@ -193,6 +211,7 @@
 /* Photo
    ========================================================================== */
 .artistPhotoWrapper {
+  grid-area: photo;
   position: relative;
   width: 80%;
   margin-left: auto;
@@ -228,9 +247,7 @@
   letter-spacing: 0.02em;
   color: var(--teal);
   margin-bottom: 0.4rem;
-    text-decoration: underline;
-
-  
+  text-decoration: underline;
 }
 
 .linkItem {
@@ -366,6 +383,7 @@
 .pressSection {
   margin-bottom: var(--space-3xl);
   padding-top: 2rem;
+
 }
 
 .pressTitle {
@@ -440,7 +458,12 @@
 .artistHeaderWideTop {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: var(--space-2xl);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "nameblock photo"
+    "info      photo";
+  column-gap: var(--space-2xl);
+  row-gap: var(--space-md);
   align-items: start;
   margin-bottom: var(--space-2xl);
 }
@@ -492,9 +515,18 @@
     padding: 0 var(--space-lg);
   }
 
+  .artistSection {
+    padding: var(--space-xl) 0;
+  }
+
   .artistHeader {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "nameblock"
+      "photo"
+      "info";
+    gap: var(--space-lg);
   }
 
   .artistPhotoWrapper {
@@ -523,7 +555,12 @@
 
   .artistHeaderWideTop {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "nameblock"
+      "photo"
+      "info";
+    gap: var(--space-lg);
   }
 
   .artistHeaderWideTop .artistPhotoWrapper {
@@ -592,5 +629,9 @@
 
   .artistHeaderWideTop .linksRow {
     grid-template-columns: 1fr;
+  }
+
+  .artistSection {
+    padding: var(--space-lg) 0;
   }
 }

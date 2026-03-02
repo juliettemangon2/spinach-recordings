@@ -276,11 +276,13 @@ export default function ArtistsPage() {
                   artist.layout === 'wideTop' ? styles.artistHeaderWideTop : ''
                 ].join(' ')}
               >
-                <div className={styles.artistInfo}>
+                <div className={styles.artistNameBlock}>
                   <h2 className={styles.artistName}>{artist.name}</h2>
                   {artist.tagline && (
                     <p className={styles.artistTagline}>{artist.tagline}</p>
                   )}
+                </div>
+                <div className={styles.artistInfo}>
                   <p className={styles.artistBio}>{artist.bio}</p>
                   {/* Links: Socials & Streaming */}
                   <div className={styles.linksRow}>
@@ -446,11 +448,13 @@ export default function ArtistsPage() {
               <div className={styles.container}>
                 {/* Name & Bio + Photo */}
                 <div className={styles.artistHeader}>
-                  <div className={styles.artistInfo}>
+                  <div className={styles.artistNameBlock}>
                     <h2 className={styles.artistName}>{client.name}</h2>
                     {client.tagline && (
                       <p className={styles.artistTagline}>{client.tagline}</p>
                     )}
+                  </div>
+                  <div className={styles.artistInfo}>
                     <p className={styles.artistBio}>{client.bio}</p>
                     {/* Links: Socials & Streaming */}
                     <div className={styles.linksRow}>

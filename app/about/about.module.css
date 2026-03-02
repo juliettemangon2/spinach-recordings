@@ -132,8 +132,8 @@
 }
 
 .logoPlaceholder {
-  width: 200px;
-  height: 200px;
+  width: clamp(100px, 16vw, 200px);
+  height: clamp(100px, 16vw, 200px);
   border-radius: 50%;
   background-color: #e8e8e0;
   display: flex;
@@ -186,17 +186,36 @@
 
 /* Responsive
    ========================================================================== */
+
+/* Tablet: 601px – 900px — 3 items per page */
+@media (max-width: 900px) {
+  .carouselWrapper {
+    gap: 1rem;
+    padding: 0 var(--space-sm);
+  }
+
+  .carouselTrack {
+    gap: 1.25rem;
+  }
+
+  .partnerCard {
+    max-width: none;
+  }
+
+  .arrowBtn {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .heroContent {
     padding: var(--space-md) var(--space-sm);
   }
-
-  .carouselWrapper {
-    gap: 0.75rem;
-    padding: 0 var(--space-sm);
-  }
 }
 
+/* Mobile: ≤600px — 2 items per page */
 @media (max-width: 600px) {
   .heroHeading {
     margin-top: 3rem;
@@ -220,15 +239,6 @@
 
   .carouselTrack {
     gap: 0.75rem;
-  }
-
-  .partnerCard {
-    max-width: none;
-  }
-
-  .logoPlaceholder {
-    width: 120px;
-    height: 120px;
   }
 
   .arrowBtn {

@@ -22,6 +22,7 @@ const partners = [
 ]
 
 const DESKTOP_ITEMS = 4
+const TABLET_ITEMS = 3
 const MOBILE_ITEMS = 2
 
 export default function AboutPage() {
@@ -30,7 +31,8 @@ export default function AboutPage() {
 
   useEffect(() => {
     const update = () => {
-      const next = window.innerWidth <= 600 ? MOBILE_ITEMS : DESKTOP_ITEMS
+      const w = window.innerWidth
+      const next = w <= 600 ? MOBILE_ITEMS : w <= 900 ? TABLET_ITEMS : DESKTOP_ITEMS
       setItemsPerPage((prev) => {
         if (prev !== next) setPage(0)
         return next

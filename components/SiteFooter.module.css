@@ -183,6 +183,7 @@
   .container {
     grid-template-columns: 1.05fr 2.4fr 1.3fr;
     gap: 2rem;
+    
   }
 
   .locations {
@@ -194,4 +195,13 @@
 .green {
   color: var(--sage);
   font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .footer{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    
+  }
+  
 }
