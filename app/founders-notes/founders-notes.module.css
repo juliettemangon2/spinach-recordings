@@ -26,7 +26,6 @@
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   color: var(--teal);
-  text-transform: uppercase;
   letter-spacing: -0.03em;
   line-height: 0.95;
 }
