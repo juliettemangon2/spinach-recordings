@@ -206,7 +206,6 @@
 }
 
 
-
 .teamList {
   list-style: none;
   display: flex;
@@ -288,6 +287,11 @@
   .featuredGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl) var(--space-lg);
+  }
+
+  .listContainer{
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 

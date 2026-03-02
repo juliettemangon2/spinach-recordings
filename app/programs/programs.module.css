@@ -159,10 +159,10 @@
 
 .eventDate {
   font-family: var(--font-aktiv);
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1rem, 2.5vw, 1.6rem);
   color: var(--charcoal);
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
   white-space: nowrap;
   flex-shrink: 0;
 }
