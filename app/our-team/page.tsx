@@ -21,7 +21,7 @@ const ceo: FeaturedMember = {
   role: 'CEO & Founder',
   roleLink: 'https://www.linkedin.com/in/bradfordwatson1/',
   photo: '/team/BRAD-PORTRAIT.webp',
-  bio: ' Brad has since positioned himself as a distinguished exemplar of conviction, entrepreneurship and artistry. Versed in all aspects of business development and strategic planning, with a concept to completion mentality. An experienced operator with a demonstrated history across the Accessories, Apparel and overall Fashion industry. A clear understanding of brand market positioning and all related support initiatives, from samples to sell through.',
+  bio: ' Bradford Watson is Founder & Chief Executive Officer at Spinach Records, a wellness-focused record label. Bradford has also created the Mindful Musicianship program, utilized by Warner Music Group, to create for holistic services for artist rosters. Additionally, Bradford has launched TRAINER for Live Nation which is scientifically dedicated to keeping touring artists at their physical, mental, and creative peak every night, in every city.',
 }
 
 const featuredMembers: FeaturedMember[] = [
