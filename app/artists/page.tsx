@@ -58,13 +58,34 @@ const artists: ArtistData[] = [
     ],
 
   },
-  
+    {
+    slug: 'lauren-soyung',
+    name: 'Lauren Soyung',
+    tagline: '',
+    bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
+    photo: '/artists/lauren-soyung.jpg',
+    socials: [
+      { label: 'INSTAGRAM', url: 'https://www.instagram.com/laurensoyung/' },
+      { label: 'TIKTOK', url: 'https://www.tiktok.com/@laurensoyung' },
+
+    ],
+    streaming: [
+      { label: 'SPOTIFY', url: 'https://open.spotify.com/track/1gJzyuLPif3tnj5QfE0BqL' },
+
+    ],
+    releases: [
+      { title: 'I Love to Lie', image: '/artist-releases/lovetolie.webp', link: 'https://open.spotify.com/track/1gJzyuLPif3tnj5QfE0BqL' },
+
+    ],
+    videos: [],
+  },
+
   {
     slug: 'savannah-summers',
     name: 'sav!',
     tagline: '',
     bio: 'sav! (Savannah Summers) is a California-born artist and performer whose journey began in childhood, acting in film, commercials, and television. She debuted in the critically acclaimed LGBTQ+ film Psycho Baby, before transitioning to music after studying Theatre in college. sav! launched her music career in 2021 with her debut EP Astral Projection, an acoustic indie project that explores themes of personal growth, confronting the past, and embracing the future. Her notable tracks include "Hollywood," "All the Wrong People," "Free Britney," and "They Don’t Like My Past, They Like My Future."',
-    photo: '/artists/savannah-summers.jpg',
+    photo: '/artists/sav.JPG',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/savannahraesummers/' },
       { label: 'TIKTOK', url: 'https://www.tiktok.com/@savirae' },
@@ -82,19 +103,7 @@ const artists: ArtistData[] = [
     ],
     videos: [],
   },
-  {
-    slug: 'lauren-soyung',
-    name: 'Lauren Soyung',
-    tagline: '',
-    bio: 'Lauren is a 24-year old Korean-American singer-songwriter in Los Angeles and raised in the OC now based in Paris. She has received her certificate degree in Innovations In Textiles and Engineering at MIT. With 10+ years of professional dance experience, trained and competing in Ballet, Ballet-en-Pointe, Tap, Jazz, Lyrical, Contemporary, Hip-Hop and Musical Theatre. She started off as a content creator and industry model signed in 5 countries until launching her brand SOYUNG at the end of 2023. Continually expressing her story through multiple mediums of art, she now seeks to do through auditory story.',
-    photo: '/artists/lauren-soyung.jpg',
-    socials: [
-      { label: 'INSTAGRAM', url: 'https://www.instagram.com/laurensoyung/' },
-    ],
-    streaming: [],
-    releases: [],
-    videos: [],
-  },
+
 
   {
     slug: 'ajai',
@@ -122,7 +131,7 @@ const artists: ArtistData[] = [
     ],
   },
 
-  
+
   {
     slug: 'brennan-gregg',
     name: 'Brennan Gregg',

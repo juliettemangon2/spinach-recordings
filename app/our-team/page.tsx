@@ -26,29 +26,35 @@ const ceo: FeaturedMember = {
 
 const featuredMembers: FeaturedMember[] = [
   {
+    name: 'Quinn Davis',
+    role: 'CFO',
+    roleLink: 'https://www.linkedin.com/in/quinn-davis-373aa41a7/',
+    photo: '/team/quinn.jpeg',
+    bio: '',
+  },
+  {
     name: 'Henry Love-Schultz',
     role: 'CREATIVE DIRECTOR',
     roleLink: 'https://www.linkedin.com/in/henry-love-36177a94/',
     photo: '/team/HANK-PORTRAIT.webp',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    bio: '',
   },
   {
     name: 'Linda Mindaye',
     role: 'HEAD OF COMMUNITY',
     roleLink: 'https://www.linkedin.com/in/lindamindaye/',
     photo: '/team/Linda-PORTRAIT.webp',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
+    bio: '',
+  }
+  
+]
+
+const restOfTeam: ListMember[] = [
   {
     name: 'Rachel Lee Heinkel',
     role: 'MOVEMENT DIRECTOR',
     roleLink: 'https://www.rachelheinkel.com/about',
-    photo: '/team/RACHEL-PORTRAIT.webp',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
-]
-
-const restOfTeam: ListMember[] = [
   {
     name: 'Syreeta Butler',
     role: 'WELLNESS ADVISOR',

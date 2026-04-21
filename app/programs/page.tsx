@@ -45,7 +45,7 @@ export default function ProgramsPage() {
           </div>
           <div className={styles.masterclassImageWrap}>
             <img
-              src="https://placehold.co/700x500/2a2a2a/888888?text=Masterclass+Event+photo"
+              src="/programs/warnerEvent.jpg"
               alt="Music Industry Masterclass event"
               className={styles.masterclassImage}
             />
