@@ -190,7 +190,7 @@ const pastClients: ArtistData[] = [
     slug: 'neena-roe',
     name: 'Neena Roe',
     tagline: '',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    bio: '',
     photo: '/artists/neena-roe.JPG',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/neenaroe/' },
@@ -203,10 +203,26 @@ const pastClients: ArtistData[] = [
     isPastClient: true,
   },
   {
+    slug: 'muo-duo',
+    name: 'Muo Duo',
+    tagline: '',
+    bio: '',
+    photo: '/past-clients/muo-duo.JPG',
+    socials: [
+      { label: 'INSTAGRAM', url: 'https://www.instagram.com/muoduo_band/' },
+    ],
+    streaming: [
+      { label: 'SPOTIFY', url: 'https://open.spotify.com/artist/2bpdb2V3w0oIYcMlUCp8cw' },
+    ],
+    releases: [],
+    videos: [],
+    isPastClient: true,
+  },
+  {
     slug: 'bisou-bisou-radio',
     name: 'Bisou Bisou Radio',
     tagline: '',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    bio: '',
     photo: '/artists/bisoubisou.jpeg',
     socials: [
       { label: 'INSTAGRAM', url: 'https://www.instagram.com/bisoubisouradio/' },
@@ -464,7 +480,6 @@ export default function ArtistsPage() {
                     )}
                   </div>
                   <div className={styles.artistInfo}>
-                    <p className={styles.artistBio}>{client.bio}</p>
                     {/* Links: Socials & Streaming */}
                     <div className={styles.linksRow}>
                       <div className={styles.linkGroup}>
